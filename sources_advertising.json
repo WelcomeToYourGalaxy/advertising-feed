@@ -1,1591 +1,2369 @@
 {
-  "_note": [
-    "Sources for the advertising wire.",
-    "",
-    "direct: feeds proven working in the sibling Welcome to Your Galaxy repos.",
-    "  Nothing invented — an untested feed URL reports itself unreachable on every",
-    "  harvest and quietly makes the coverage figure a lie.",
-    "",
-    "gnews: Google News locale searches; the harvester builds the URL from",
-    "  hl / gl / ceid. Twenty-four queries rotate across 46 locales.",
-    "",
-    "events: subject searches for regulators, enforcement and recurring research.",
-    "",
-    "standing is provenance, not importance:",
-    "  official  advertising and data regulators, competition authorities, courts",
-    "  research  tracking and adtech research, industry and influence analysis",
-    "  press     general news across the locales",
-    "  rights    privacy and consumer organisations",
-    "",
-    "Worth adding, with URLs you have opened: the Advertising Standards Authority,",
-    "noyb, the Irish Council for Civil Liberties adtech work, Check My Ads,",
-    "AdAlert, Badvertising, the Center for Countering Digital Hate, and national",
-    "data protection authorities."
-  ],
-  "direct": [
-    {
-      "name": "European Commission",
-      "lang": "en",
-      "standing": "official",
-      "url": "https://ec.europa.eu/commission/presscorner/api/rss"
-    },
-    {
-      "name": "US Department of Justice",
-      "lang": "en",
-      "standing": "official",
-      "url": "https://www.justice.gov/feeds/opa/justice-news.xml"
-    },
-    {
-      "name": "OECD",
-      "lang": "en",
-      "standing": "official",
-      "url": "https://www.oecd.org/newsroom/index.xml"
-    },
-    {
-      "name": "World Health Organization",
-      "lang": "en",
-      "standing": "official",
-      "url": "https://www.who.int/rss-feeds/news-english.xml"
-    },
-    {
-      "name": "OHCHR — news",
-      "lang": "en",
-      "standing": "official",
-      "url": "https://www.ohchr.org/en/rss/news"
-    },
-    {
-      "name": "European Court of Human Rights",
-      "lang": "en",
-      "standing": "official",
-      "url": "https://www.echr.coe.int/rss"
-    },
-    {
-      "name": "Europol",
-      "lang": "en",
-      "standing": "official",
-      "url": "https://www.europol.europa.eu/rss.xml"
-    },
-    {
-      "name": "UNCTAD",
-      "lang": "en",
-      "standing": "official",
-      "url": "https://unctad.org/rss.xml"
-    },
-    {
-      "name": "Privacy International",
-      "lang": "en",
-      "standing": "rights",
-      "url": "https://privacyinternational.org/rss.xml"
-    },
-    {
-      "name": "EDRi",
-      "lang": "en",
-      "standing": "rights",
-      "url": "https://edri.org/feed/"
-    },
-    {
-      "name": "Access Now",
-      "lang": "en",
-      "standing": "rights",
-      "url": "https://www.accessnow.org/feed/"
-    },
-    {
-      "name": "Electronic Frontier Foundation",
-      "lang": "en",
-      "standing": "rights",
-      "url": "https://www.eff.org/rss/updates.xml"
-    },
-    {
-      "name": "Statewatch",
-      "lang": "en",
-      "standing": "rights",
-      "url": "https://www.statewatch.org/rss/"
-    },
-    {
-      "name": "Article 19",
-      "lang": "en",
-      "standing": "rights",
-      "url": "https://www.article19.org/feed/"
-    },
-    {
-      "name": "Public Citizen · Global Trade Watch",
-      "lang": "en",
-      "standing": "rights",
-      "url": "https://www.citizen.org/feed/"
-    },
-    {
-      "name": "Corporate Europe Observatory",
-      "lang": "en",
-      "standing": "rights",
-      "url": "https://corporateeurope.org/en/rss.xml"
-    },
-    {
-      "name": "Global Witness",
-      "lang": "en",
-      "standing": "rights",
-      "url": "https://www.globalwitness.org/en/rss/"
-    },
-    {
-      "name": "Transparency International",
-      "lang": "en",
-      "standing": "research",
-      "url": "https://www.transparency.org/en/rss"
-    },
-    {
-      "name": "Business & Human Rights Resource Centre",
-      "lang": "en",
-      "standing": "research",
-      "url": "https://www.business-humanrights.org/en/rss/"
-    },
-    {
-      "name": "Bellingcat",
-      "lang": "en",
-      "standing": "research",
-      "url": "https://www.bellingcat.com/feed/"
-    },
-    {
-      "name": "Transnational Institute",
-      "lang": "en",
-      "standing": "research",
-      "url": "https://www.tni.org/en/rss.xml"
-    },
-    {
-      "name": "ODI",
-      "lang": "en",
-      "standing": "research",
-      "url": "https://odi.org/en/feed/"
-    },
-    {
-      "name": "CEPR",
-      "lang": "en",
-      "standing": "research",
-      "url": "https://cepr.org/rss.xml"
-    },
-    {
-      "name": "Peterson Institute",
-      "lang": "en",
-      "standing": "research",
-      "url": "https://www.piie.com/rss.xml"
-    },
-    {
-      "name": "Tax Justice Network",
-      "lang": "en",
-      "standing": "research",
-      "url": "https://taxjustice.net/feed/"
-    },
-    {
-      "name": "Freedom House",
-      "lang": "en",
-      "standing": "research",
-      "url": "https://freedomhouse.org/rss.xml"
-    },
-    {
-      "name": "CIVICUS Monitor",
-      "lang": "en",
-      "standing": "research",
-      "url": "https://monitor.civicus.org/feed/"
-    },
-    {
-      "name": "The Intercept",
-      "lang": "en",
-      "standing": "press",
-      "url": "https://theintercept.com/feed/?rss"
-    },
-    {
-      "name": "The Marshall Project",
-      "lang": "en",
-      "standing": "press",
-      "url": "https://www.themarshallproject.org/rss/recent.rss"
-    }
-  ],
-  "gnews": [
-    {
-      "label": "English (US) 1",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-US",
-      "gl": "US",
-      "ceid": "US:en",
-      "query": "\"targeted advertising\" OR microtargeting OR \"behavioural advertising\" ruling"
-    },
-    {
-      "label": "English (US) 2",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-US",
-      "gl": "US",
-      "ceid": "US:en",
-      "query": "\"surveillance advertising\" OR \"data broker\" OR \"real-time bidding\" complaint"
-    },
-    {
-      "label": "English (US) 3",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-US",
-      "gl": "US",
-      "ceid": "US:en",
-      "query": "\"dark patterns\" OR \"deceptive design\" fine OR ruling"
-    },
-    {
-      "label": "English (UK) 4",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-GB",
-      "gl": "GB",
-      "ceid": "GB:en-GB",
-      "query": "\"marketing to children\" OR kidfluencer OR \"children's code\" advertising"
-    },
-    {
-      "label": "English (UK) 5",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-GB",
-      "gl": "GB",
-      "ceid": "GB:en-GB",
-      "query": "\"junk food advertising\" ban OR watershed OR HFSS restrictions"
-    },
-    {
-      "label": "English (UK) 6",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-GB",
-      "gl": "GB",
-      "ceid": "GB:en-GB",
-      "query": "\"gambling advertising\" OR \"alcohol advertising\" ban OR sponsorship"
-    },
-    {
-      "label": "English (India) 7",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-IN",
-      "gl": "IN",
-      "ceid": "IN:en",
-      "query": "\"tobacco marketing\" OR vape advertising youth OR e-cigarette promotion"
-    },
-    {
-      "label": "English (India) 8",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-IN",
-      "gl": "IN",
-      "ceid": "IN:en",
-      "query": "greenwashing ruling OR \"green claims\" misleading OR \"carbon neutral\" claim banned"
-    },
-    {
-      "label": "English (India) 9",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-IN",
-      "gl": "IN",
-      "ceid": "IN:en",
-      "query": "\"advertising standards\" ruling OR complaint upheld OR ad banned"
-    },
-    {
-      "label": "English (Nigeria) 10",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-NG",
-      "gl": "NG",
-      "ceid": "NG:en",
-      "query": "\"influencer\" undisclosed advertising OR paid partnership rules"
-    },
-    {
-      "label": "English (Nigeria) 11",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-NG",
-      "gl": "NG",
-      "ceid": "NG:en",
-      "query": "\"political advertising\" rules OR ad library OR election ads transparency"
-    },
-    {
-      "label": "English (Nigeria) 12",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-NG",
-      "gl": "NG",
-      "ceid": "NG:en",
-      "query": "\"attention economy\" OR \"algorithmic feed\" harm OR addictive design"
-    },
-    {
-      "label": "English (South Africa) 13",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-ZA",
-      "gl": "ZA",
-      "ceid": "ZA:en",
-      "query": "\"ad fraud\" OR \"brand safety\" OR made-for-advertising sites"
-    },
-    {
-      "label": "English (South Africa) 14",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-ZA",
-      "gl": "ZA",
-      "ceid": "ZA:en",
-      "query": "adtech antitrust OR \"ad exchange\" ruling OR Google advertising monopoly"
-    },
-    {
-      "label": "English (South Africa) 15",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-ZA",
-      "gl": "ZA",
-      "ceid": "ZA:en",
-      "query": "\"third-party cookies\" OR consent banner ruling OR GDPR advertising fine"
-    },
-    {
-      "label": "English (Australia) 16",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-AU",
-      "gl": "AU",
-      "ceid": "AU:en",
-      "query": "\"search results\" manipulation OR ranking boosted OR fake reviews enforcement"
-    },
-    {
-      "label": "English (Australia) 17",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-AU",
-      "gl": "AU",
-      "ceid": "AU:en",
-      "query": "\"Digital Services Act\" advertising OR \"Digital Markets Act\" enforcement"
-    },
-    {
-      "label": "English (Australia) 18",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-AU",
-      "gl": "AU",
-      "ceid": "AU:en",
-      "query": "\"outdoor advertising\" ban city OR billboard restrictions public space"
-    },
-    {
-      "label": "English (Kenya) 19",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-KE",
-      "gl": "KE",
-      "ceid": "KE:en",
-      "query": "\"space billboard\" OR orbital advertising OR satellite brightness night sky"
-    },
-    {
-      "label": "English (Kenya) 20",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-KE",
-      "gl": "KE",
-      "ceid": "KE:en",
-      "query": "\"AI-generated\" advertising disclosure OR generative AI marketing agency"
-    },
-    {
-      "label": "English (Kenya) 21",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-KE",
-      "gl": "KE",
-      "ceid": "KE:en",
-      "query": "\"data protection\" fine advertising OR tracking without consent ruling"
-    },
-    {
-      "label": "English (Philippines) 22",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-PH",
-      "gl": "PH",
-      "ceid": "PH:en",
-      "query": "\"ad blocker\" OR tracking protection OR \"opt-out\" advertising default"
-    },
-    {
-      "label": "English (Philippines) 23",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-PH",
-      "gl": "PH",
-      "ceid": "PH:en",
-      "query": "\"WPP\" OR Publicis OR Omnicom OR Dentsu agency merger OR market"
-    },
-    {
-      "label": "English (Philippines) 24",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-PH",
-      "gl": "PH",
-      "ceid": "PH:en",
-      "query": "\"front group\" campaign OR astroturf OR manufactured doubt industry"
-    },
-    {
-      "label": "Spanish (Spain) 25",
-      "lang": "es",
-      "standing": "press",
-      "hl": "es",
-      "gl": "ES",
-      "ceid": "ES:es",
-      "query": "\"targeted advertising\" OR microtargeting OR \"behavioural advertising\" ruling"
-    },
-    {
-      "label": "Spanish (Spain) 26",
-      "lang": "es",
-      "standing": "press",
-      "hl": "es",
-      "gl": "ES",
-      "ceid": "ES:es",
-      "query": "\"surveillance advertising\" OR \"data broker\" OR \"real-time bidding\" complaint"
-    },
-    {
-      "label": "Spanish (Spain) 27",
-      "lang": "es",
-      "standing": "press",
-      "hl": "es",
-      "gl": "ES",
-      "ceid": "ES:es",
-      "query": "\"dark patterns\" OR \"deceptive design\" fine OR ruling"
-    },
-    {
-      "label": "Spanish (Mexico) 28",
-      "lang": "es",
-      "standing": "press",
-      "hl": "es-419",
-      "gl": "MX",
-      "ceid": "MX:es-419",
-      "query": "\"marketing to children\" OR kidfluencer OR \"children's code\" advertising"
-    },
-    {
-      "label": "Spanish (Mexico) 29",
-      "lang": "es",
-      "standing": "press",
-      "hl": "es-419",
-      "gl": "MX",
-      "ceid": "MX:es-419",
-      "query": "\"junk food advertising\" ban OR watershed OR HFSS restrictions"
-    },
-    {
-      "label": "Spanish (Mexico) 30",
-      "lang": "es",
-      "standing": "press",
-      "hl": "es-419",
-      "gl": "MX",
-      "ceid": "MX:es-419",
-      "query": "\"gambling advertising\" OR \"alcohol advertising\" ban OR sponsorship"
-    },
-    {
-      "label": "Spanish (Argentina) 31",
-      "lang": "es",
-      "standing": "press",
-      "hl": "es-419",
-      "gl": "AR",
-      "ceid": "AR:es-419",
-      "query": "\"tobacco marketing\" OR vape advertising youth OR e-cigarette promotion"
-    },
-    {
-      "label": "Spanish (Argentina) 32",
-      "lang": "es",
-      "standing": "press",
-      "hl": "es-419",
-      "gl": "AR",
-      "ceid": "AR:es-419",
-      "query": "greenwashing ruling OR \"green claims\" misleading OR \"carbon neutral\" claim banned"
-    },
-    {
-      "label": "Spanish (Argentina) 33",
-      "lang": "es",
-      "standing": "press",
-      "hl": "es-419",
-      "gl": "AR",
-      "ceid": "AR:es-419",
-      "query": "\"advertising standards\" ruling OR complaint upheld OR ad banned"
-    },
-    {
-      "label": "Spanish (Colombia) 34",
-      "lang": "es",
-      "standing": "press",
-      "hl": "es-419",
-      "gl": "CO",
-      "ceid": "CO:es-419",
-      "query": "\"influencer\" undisclosed advertising OR paid partnership rules"
-    },
-    {
-      "label": "Spanish (Colombia) 35",
-      "lang": "es",
-      "standing": "press",
-      "hl": "es-419",
-      "gl": "CO",
-      "ceid": "CO:es-419",
-      "query": "\"political advertising\" rules OR ad library OR election ads transparency"
-    },
-    {
-      "label": "Spanish (Colombia) 36",
-      "lang": "es",
-      "standing": "press",
-      "hl": "es-419",
-      "gl": "CO",
-      "ceid": "CO:es-419",
-      "query": "\"attention economy\" OR \"algorithmic feed\" harm OR addictive design"
-    },
-    {
-      "label": "French (France) 37",
-      "lang": "fr",
-      "standing": "press",
-      "hl": "fr",
-      "gl": "FR",
-      "ceid": "FR:fr",
-      "query": "\"ad fraud\" OR \"brand safety\" OR made-for-advertising sites"
-    },
-    {
-      "label": "French (France) 38",
-      "lang": "fr",
-      "standing": "press",
-      "hl": "fr",
-      "gl": "FR",
-      "ceid": "FR:fr",
-      "query": "adtech antitrust OR \"ad exchange\" ruling OR Google advertising monopoly"
-    },
-    {
-      "label": "French (France) 39",
-      "lang": "fr",
-      "standing": "press",
-      "hl": "fr",
-      "gl": "FR",
-      "ceid": "FR:fr",
-      "query": "\"third-party cookies\" OR consent banner ruling OR GDPR advertising fine"
-    },
-    {
-      "label": "French (Senegal) 40",
-      "lang": "fr",
-      "standing": "press",
-      "hl": "fr",
-      "gl": "SN",
-      "ceid": "SN:fr",
-      "query": "\"search results\" manipulation OR ranking boosted OR fake reviews enforcement"
-    },
-    {
-      "label": "French (Senegal) 41",
-      "lang": "fr",
-      "standing": "press",
-      "hl": "fr",
-      "gl": "SN",
-      "ceid": "SN:fr",
-      "query": "\"Digital Services Act\" advertising OR \"Digital Markets Act\" enforcement"
-    },
-    {
-      "label": "French (Senegal) 42",
-      "lang": "fr",
-      "standing": "press",
-      "hl": "fr",
-      "gl": "SN",
-      "ceid": "SN:fr",
-      "query": "\"outdoor advertising\" ban city OR billboard restrictions public space"
-    },
-    {
-      "label": "French (Canada) 43",
-      "lang": "fr",
-      "standing": "press",
-      "hl": "fr",
-      "gl": "CA",
-      "ceid": "CA:fr",
-      "query": "\"space billboard\" OR orbital advertising OR satellite brightness night sky"
-    },
-    {
-      "label": "French (Canada) 44",
-      "lang": "fr",
-      "standing": "press",
-      "hl": "fr",
-      "gl": "CA",
-      "ceid": "CA:fr",
-      "query": "\"AI-generated\" advertising disclosure OR generative AI marketing agency"
-    },
-    {
-      "label": "French (Canada) 45",
-      "lang": "fr",
-      "standing": "press",
-      "hl": "fr",
-      "gl": "CA",
-      "ceid": "CA:fr",
-      "query": "\"data protection\" fine advertising OR tracking without consent ruling"
-    },
-    {
-      "label": "Portuguese (Brazil) 46",
-      "lang": "pt",
-      "standing": "press",
-      "hl": "pt-BR",
-      "gl": "BR",
-      "ceid": "BR:pt-419",
-      "query": "\"ad blocker\" OR tracking protection OR \"opt-out\" advertising default"
-    },
-    {
-      "label": "Portuguese (Brazil) 47",
-      "lang": "pt",
-      "standing": "press",
-      "hl": "pt-BR",
-      "gl": "BR",
-      "ceid": "BR:pt-419",
-      "query": "\"WPP\" OR Publicis OR Omnicom OR Dentsu agency merger OR market"
-    },
-    {
-      "label": "Portuguese (Brazil) 48",
-      "lang": "pt",
-      "standing": "press",
-      "hl": "pt-BR",
-      "gl": "BR",
-      "ceid": "BR:pt-419",
-      "query": "\"front group\" campaign OR astroturf OR manufactured doubt industry"
-    },
-    {
-      "label": "Portuguese (Portugal) 49",
-      "lang": "pt",
-      "standing": "press",
-      "hl": "pt-PT",
-      "gl": "PT",
-      "ceid": "PT:pt-150",
-      "query": "\"targeted advertising\" OR microtargeting OR \"behavioural advertising\" ruling"
-    },
-    {
-      "label": "Portuguese (Portugal) 50",
-      "lang": "pt",
-      "standing": "press",
-      "hl": "pt-PT",
-      "gl": "PT",
-      "ceid": "PT:pt-150",
-      "query": "\"surveillance advertising\" OR \"data broker\" OR \"real-time bidding\" complaint"
-    },
-    {
-      "label": "Portuguese (Portugal) 51",
-      "lang": "pt",
-      "standing": "press",
-      "hl": "pt-PT",
-      "gl": "PT",
-      "ceid": "PT:pt-150",
-      "query": "\"dark patterns\" OR \"deceptive design\" fine OR ruling"
-    },
-    {
-      "label": "Portuguese (Angola) 52",
-      "lang": "pt",
-      "standing": "press",
-      "hl": "pt-PT",
-      "gl": "AO",
-      "ceid": "AO:pt-150",
-      "query": "\"marketing to children\" OR kidfluencer OR \"children's code\" advertising"
-    },
-    {
-      "label": "Portuguese (Angola) 53",
-      "lang": "pt",
-      "standing": "press",
-      "hl": "pt-PT",
-      "gl": "AO",
-      "ceid": "AO:pt-150",
-      "query": "\"junk food advertising\" ban OR watershed OR HFSS restrictions"
-    },
-    {
-      "label": "Portuguese (Angola) 54",
-      "lang": "pt",
-      "standing": "press",
-      "hl": "pt-PT",
-      "gl": "AO",
-      "ceid": "AO:pt-150",
-      "query": "\"gambling advertising\" OR \"alcohol advertising\" ban OR sponsorship"
-    },
-    {
-      "label": "German (Germany) 55",
-      "lang": "de",
-      "standing": "press",
-      "hl": "de",
-      "gl": "DE",
-      "ceid": "DE:de",
-      "query": "\"tobacco marketing\" OR vape advertising youth OR e-cigarette promotion"
-    },
-    {
-      "label": "German (Germany) 56",
-      "lang": "de",
-      "standing": "press",
-      "hl": "de",
-      "gl": "DE",
-      "ceid": "DE:de",
-      "query": "greenwashing ruling OR \"green claims\" misleading OR \"carbon neutral\" claim banned"
-    },
-    {
-      "label": "German (Germany) 57",
-      "lang": "de",
-      "standing": "press",
-      "hl": "de",
-      "gl": "DE",
-      "ceid": "DE:de",
-      "query": "\"advertising standards\" ruling OR complaint upheld OR ad banned"
-    },
-    {
-      "label": "German (Austria) 58",
-      "lang": "de",
-      "standing": "press",
-      "hl": "de",
-      "gl": "AT",
-      "ceid": "AT:de",
-      "query": "\"influencer\" undisclosed advertising OR paid partnership rules"
-    },
-    {
-      "label": "German (Austria) 59",
-      "lang": "de",
-      "standing": "press",
-      "hl": "de",
-      "gl": "AT",
-      "ceid": "AT:de",
-      "query": "\"political advertising\" rules OR ad library OR election ads transparency"
-    },
-    {
-      "label": "German (Austria) 60",
-      "lang": "de",
-      "standing": "press",
-      "hl": "de",
-      "gl": "AT",
-      "ceid": "AT:de",
-      "query": "\"attention economy\" OR \"algorithmic feed\" harm OR addictive design"
-    },
-    {
-      "label": "Russian (Russia) 61",
-      "lang": "ru",
-      "standing": "press",
-      "hl": "ru",
-      "gl": "RU",
-      "ceid": "RU:ru",
-      "query": "\"ad fraud\" OR \"brand safety\" OR made-for-advertising sites"
-    },
-    {
-      "label": "Russian (Russia) 62",
-      "lang": "ru",
-      "standing": "press",
-      "hl": "ru",
-      "gl": "RU",
-      "ceid": "RU:ru",
-      "query": "adtech antitrust OR \"ad exchange\" ruling OR Google advertising monopoly"
-    },
-    {
-      "label": "Russian (Russia) 63",
-      "lang": "ru",
-      "standing": "press",
-      "hl": "ru",
-      "gl": "RU",
-      "ceid": "RU:ru",
-      "query": "\"third-party cookies\" OR consent banner ruling OR GDPR advertising fine"
-    },
-    {
-      "label": "Russian (Kazakhstan) 64",
-      "lang": "ru",
-      "standing": "press",
-      "hl": "ru",
-      "gl": "KZ",
-      "ceid": "KZ:ru",
-      "query": "\"search results\" manipulation OR ranking boosted OR fake reviews enforcement"
-    },
-    {
-      "label": "Russian (Kazakhstan) 65",
-      "lang": "ru",
-      "standing": "press",
-      "hl": "ru",
-      "gl": "KZ",
-      "ceid": "KZ:ru",
-      "query": "\"Digital Services Act\" advertising OR \"Digital Markets Act\" enforcement"
-    },
-    {
-      "label": "Russian (Kazakhstan) 66",
-      "lang": "ru",
-      "standing": "press",
-      "hl": "ru",
-      "gl": "KZ",
-      "ceid": "KZ:ru",
-      "query": "\"outdoor advertising\" ban city OR billboard restrictions public space"
-    },
-    {
-      "label": "Arabic (Egypt) 67",
-      "lang": "ar",
-      "standing": "press",
-      "hl": "ar",
-      "gl": "EG",
-      "ceid": "EG:ar",
-      "query": "\"space billboard\" OR orbital advertising OR satellite brightness night sky"
-    },
-    {
-      "label": "Arabic (Egypt) 68",
-      "lang": "ar",
-      "standing": "press",
-      "hl": "ar",
-      "gl": "EG",
-      "ceid": "EG:ar",
-      "query": "\"AI-generated\" advertising disclosure OR generative AI marketing agency"
-    },
-    {
-      "label": "Arabic (Egypt) 69",
-      "lang": "ar",
-      "standing": "press",
-      "hl": "ar",
-      "gl": "EG",
-      "ceid": "EG:ar",
-      "query": "\"data protection\" fine advertising OR tracking without consent ruling"
-    },
-    {
-      "label": "Arabic (UAE) 70",
-      "lang": "ar",
-      "standing": "press",
-      "hl": "ar",
-      "gl": "AE",
-      "ceid": "AE:ar",
-      "query": "\"ad blocker\" OR tracking protection OR \"opt-out\" advertising default"
-    },
-    {
-      "label": "Arabic (UAE) 71",
-      "lang": "ar",
-      "standing": "press",
-      "hl": "ar",
-      "gl": "AE",
-      "ceid": "AE:ar",
-      "query": "\"WPP\" OR Publicis OR Omnicom OR Dentsu agency merger OR market"
-    },
-    {
-      "label": "Arabic (UAE) 72",
-      "lang": "ar",
-      "standing": "press",
-      "hl": "ar",
-      "gl": "AE",
-      "ceid": "AE:ar",
-      "query": "\"front group\" campaign OR astroturf OR manufactured doubt industry"
-    },
-    {
-      "label": "Arabic (Lebanon) 73",
-      "lang": "ar",
-      "standing": "press",
-      "hl": "ar",
-      "gl": "LB",
-      "ceid": "LB:ar",
-      "query": "\"targeted advertising\" OR microtargeting OR \"behavioural advertising\" ruling"
-    },
-    {
-      "label": "Arabic (Lebanon) 74",
-      "lang": "ar",
-      "standing": "press",
-      "hl": "ar",
-      "gl": "LB",
-      "ceid": "LB:ar",
-      "query": "\"surveillance advertising\" OR \"data broker\" OR \"real-time bidding\" complaint"
-    },
-    {
-      "label": "Arabic (Lebanon) 75",
-      "lang": "ar",
-      "standing": "press",
-      "hl": "ar",
-      "gl": "LB",
-      "ceid": "LB:ar",
-      "query": "\"dark patterns\" OR \"deceptive design\" fine OR ruling"
-    },
-    {
-      "label": "Chinese (Mainland) 76",
-      "lang": "zh",
-      "standing": "press",
-      "hl": "zh-CN",
-      "gl": "CN",
-      "ceid": "CN:zh-Hans",
-      "query": "\"marketing to children\" OR kidfluencer OR \"children's code\" advertising"
-    },
-    {
-      "label": "Chinese (Mainland) 77",
-      "lang": "zh",
-      "standing": "press",
-      "hl": "zh-CN",
-      "gl": "CN",
-      "ceid": "CN:zh-Hans",
-      "query": "\"junk food advertising\" ban OR watershed OR HFSS restrictions"
-    },
-    {
-      "label": "Chinese (Mainland) 78",
-      "lang": "zh",
-      "standing": "press",
-      "hl": "zh-CN",
-      "gl": "CN",
-      "ceid": "CN:zh-Hans",
-      "query": "\"gambling advertising\" OR \"alcohol advertising\" ban OR sponsorship"
-    },
-    {
-      "label": "Chinese (Taiwan) 79",
-      "lang": "zh",
-      "standing": "press",
-      "hl": "zh-TW",
-      "gl": "TW",
-      "ceid": "TW:zh-Hant",
-      "query": "\"tobacco marketing\" OR vape advertising youth OR e-cigarette promotion"
-    },
-    {
-      "label": "Chinese (Taiwan) 80",
-      "lang": "zh",
-      "standing": "press",
-      "hl": "zh-TW",
-      "gl": "TW",
-      "ceid": "TW:zh-Hant",
-      "query": "greenwashing ruling OR \"green claims\" misleading OR \"carbon neutral\" claim banned"
-    },
-    {
-      "label": "Chinese (Taiwan) 81",
-      "lang": "zh",
-      "standing": "press",
-      "hl": "zh-TW",
-      "gl": "TW",
-      "ceid": "TW:zh-Hant",
-      "query": "\"advertising standards\" ruling OR complaint upheld OR ad banned"
-    },
-    {
-      "label": "Chinese (Hong Kong) 82",
-      "lang": "zh",
-      "standing": "press",
-      "hl": "zh-HK",
-      "gl": "HK",
-      "ceid": "HK:zh-Hant",
-      "query": "\"influencer\" undisclosed advertising OR paid partnership rules"
-    },
-    {
-      "label": "Chinese (Hong Kong) 83",
-      "lang": "zh",
-      "standing": "press",
-      "hl": "zh-HK",
-      "gl": "HK",
-      "ceid": "HK:zh-Hant",
-      "query": "\"political advertising\" rules OR ad library OR election ads transparency"
-    },
-    {
-      "label": "Chinese (Hong Kong) 84",
-      "lang": "zh",
-      "standing": "press",
-      "hl": "zh-HK",
-      "gl": "HK",
-      "ceid": "HK:zh-Hant",
-      "query": "\"attention economy\" OR \"algorithmic feed\" harm OR addictive design"
-    },
-    {
-      "label": "Hindi (India) 85",
-      "lang": "hi",
-      "standing": "press",
-      "hl": "hi",
-      "gl": "IN",
-      "ceid": "IN:hi",
-      "query": "\"ad fraud\" OR \"brand safety\" OR made-for-advertising sites"
-    },
-    {
-      "label": "Hindi (India) 86",
-      "lang": "hi",
-      "standing": "press",
-      "hl": "hi",
-      "gl": "IN",
-      "ceid": "IN:hi",
-      "query": "adtech antitrust OR \"ad exchange\" ruling OR Google advertising monopoly"
-    },
-    {
-      "label": "Hindi (India) 87",
-      "lang": "hi",
-      "standing": "press",
-      "hl": "hi",
-      "gl": "IN",
-      "ceid": "IN:hi",
-      "query": "\"third-party cookies\" OR consent banner ruling OR GDPR advertising fine"
-    },
-    {
-      "label": "Bengali (Bangladesh) 88",
-      "lang": "bn",
-      "standing": "press",
-      "hl": "bn",
-      "gl": "BD",
-      "ceid": "BD:bn",
-      "query": "\"search results\" manipulation OR ranking boosted OR fake reviews enforcement"
-    },
-    {
-      "label": "Bengali (Bangladesh) 89",
-      "lang": "bn",
-      "standing": "press",
-      "hl": "bn",
-      "gl": "BD",
-      "ceid": "BD:bn",
-      "query": "\"Digital Services Act\" advertising OR \"Digital Markets Act\" enforcement"
-    },
-    {
-      "label": "Bengali (Bangladesh) 90",
-      "lang": "bn",
-      "standing": "press",
-      "hl": "bn",
-      "gl": "BD",
-      "ceid": "BD:bn",
-      "query": "\"outdoor advertising\" ban city OR billboard restrictions public space"
-    },
-    {
-      "label": "Indonesian 91",
-      "lang": "id",
-      "standing": "press",
-      "hl": "id",
-      "gl": "ID",
-      "ceid": "ID:id",
-      "query": "\"space billboard\" OR orbital advertising OR satellite brightness night sky"
-    },
-    {
-      "label": "Indonesian 92",
-      "lang": "id",
-      "standing": "press",
-      "hl": "id",
-      "gl": "ID",
-      "ceid": "ID:id",
-      "query": "\"AI-generated\" advertising disclosure OR generative AI marketing agency"
-    },
-    {
-      "label": "Indonesian 93",
-      "lang": "id",
-      "standing": "press",
-      "hl": "id",
-      "gl": "ID",
-      "ceid": "ID:id",
-      "query": "\"data protection\" fine advertising OR tracking without consent ruling"
-    },
-    {
-      "label": "Japanese 94",
-      "lang": "ja",
-      "standing": "press",
-      "hl": "ja",
-      "gl": "JP",
-      "ceid": "JP:ja",
-      "query": "\"ad blocker\" OR tracking protection OR \"opt-out\" advertising default"
-    },
-    {
-      "label": "Japanese 95",
-      "lang": "ja",
-      "standing": "press",
-      "hl": "ja",
-      "gl": "JP",
-      "ceid": "JP:ja",
-      "query": "\"WPP\" OR Publicis OR Omnicom OR Dentsu agency merger OR market"
-    },
-    {
-      "label": "Japanese 96",
-      "lang": "ja",
-      "standing": "press",
-      "hl": "ja",
-      "gl": "JP",
-      "ceid": "JP:ja",
-      "query": "\"front group\" campaign OR astroturf OR manufactured doubt industry"
-    },
-    {
-      "label": "Korean 97",
-      "lang": "ko",
-      "standing": "press",
-      "hl": "ko",
-      "gl": "KR",
-      "ceid": "KR:ko",
-      "query": "\"targeted advertising\" OR microtargeting OR \"behavioural advertising\" ruling"
-    },
-    {
-      "label": "Korean 98",
-      "lang": "ko",
-      "standing": "press",
-      "hl": "ko",
-      "gl": "KR",
-      "ceid": "KR:ko",
-      "query": "\"surveillance advertising\" OR \"data broker\" OR \"real-time bidding\" complaint"
-    },
-    {
-      "label": "Korean 99",
-      "lang": "ko",
-      "standing": "press",
-      "hl": "ko",
-      "gl": "KR",
-      "ceid": "KR:ko",
-      "query": "\"dark patterns\" OR \"deceptive design\" fine OR ruling"
-    },
-    {
-      "label": "Turkish 100",
-      "lang": "tr",
-      "standing": "press",
-      "hl": "tr",
-      "gl": "TR",
-      "ceid": "TR:tr",
-      "query": "\"marketing to children\" OR kidfluencer OR \"children's code\" advertising"
-    },
-    {
-      "label": "Turkish 101",
-      "lang": "tr",
-      "standing": "press",
-      "hl": "tr",
-      "gl": "TR",
-      "ceid": "TR:tr",
-      "query": "\"junk food advertising\" ban OR watershed OR HFSS restrictions"
-    },
-    {
-      "label": "Turkish 102",
-      "lang": "tr",
-      "standing": "press",
-      "hl": "tr",
-      "gl": "TR",
-      "ceid": "TR:tr",
-      "query": "\"gambling advertising\" OR \"alcohol advertising\" ban OR sponsorship"
-    },
-    {
-      "label": "Italian 103",
-      "lang": "it",
-      "standing": "press",
-      "hl": "it",
-      "gl": "IT",
-      "ceid": "IT:it",
-      "query": "\"tobacco marketing\" OR vape advertising youth OR e-cigarette promotion"
-    },
-    {
-      "label": "Italian 104",
-      "lang": "it",
-      "standing": "press",
-      "hl": "it",
-      "gl": "IT",
-      "ceid": "IT:it",
-      "query": "greenwashing ruling OR \"green claims\" misleading OR \"carbon neutral\" claim banned"
-    },
-    {
-      "label": "Italian 105",
-      "lang": "it",
-      "standing": "press",
-      "hl": "it",
-      "gl": "IT",
-      "ceid": "IT:it",
-      "query": "\"advertising standards\" ruling OR complaint upheld OR ad banned"
-    },
-    {
-      "label": "Dutch 106",
-      "lang": "nl",
-      "standing": "press",
-      "hl": "nl",
-      "gl": "NL",
-      "ceid": "NL:nl",
-      "query": "\"influencer\" undisclosed advertising OR paid partnership rules"
-    },
-    {
-      "label": "Dutch 107",
-      "lang": "nl",
-      "standing": "press",
-      "hl": "nl",
-      "gl": "NL",
-      "ceid": "NL:nl",
-      "query": "\"political advertising\" rules OR ad library OR election ads transparency"
-    },
-    {
-      "label": "Dutch 108",
-      "lang": "nl",
-      "standing": "press",
-      "hl": "nl",
-      "gl": "NL",
-      "ceid": "NL:nl",
-      "query": "\"attention economy\" OR \"algorithmic feed\" harm OR addictive design"
-    },
-    {
-      "label": "Polish 109",
-      "lang": "pl",
-      "standing": "press",
-      "hl": "pl",
-      "gl": "PL",
-      "ceid": "PL:pl",
-      "query": "\"ad fraud\" OR \"brand safety\" OR made-for-advertising sites"
-    },
-    {
-      "label": "Polish 110",
-      "lang": "pl",
-      "standing": "press",
-      "hl": "pl",
-      "gl": "PL",
-      "ceid": "PL:pl",
-      "query": "adtech antitrust OR \"ad exchange\" ruling OR Google advertising monopoly"
-    },
-    {
-      "label": "Polish 111",
-      "lang": "pl",
-      "standing": "press",
-      "hl": "pl",
-      "gl": "PL",
-      "ceid": "PL:pl",
-      "query": "\"third-party cookies\" OR consent banner ruling OR GDPR advertising fine"
-    },
-    {
-      "label": "Swedish 112",
-      "lang": "sv",
-      "standing": "press",
-      "hl": "sv",
-      "gl": "SE",
-      "ceid": "SE:sv",
-      "query": "\"search results\" manipulation OR ranking boosted OR fake reviews enforcement"
-    },
-    {
-      "label": "Swedish 113",
-      "lang": "sv",
-      "standing": "press",
-      "hl": "sv",
-      "gl": "SE",
-      "ceid": "SE:sv",
-      "query": "\"Digital Services Act\" advertising OR \"Digital Markets Act\" enforcement"
-    },
-    {
-      "label": "Swedish 114",
-      "lang": "sv",
-      "standing": "press",
-      "hl": "sv",
-      "gl": "SE",
-      "ceid": "SE:sv",
-      "query": "\"outdoor advertising\" ban city OR billboard restrictions public space"
-    },
-    {
-      "label": "Ukrainian 115",
-      "lang": "uk",
-      "standing": "press",
-      "hl": "uk",
-      "gl": "UA",
-      "ceid": "UA:uk",
-      "query": "\"space billboard\" OR orbital advertising OR satellite brightness night sky"
-    },
-    {
-      "label": "Ukrainian 116",
-      "lang": "uk",
-      "standing": "press",
-      "hl": "uk",
-      "gl": "UA",
-      "ceid": "UA:uk",
-      "query": "\"AI-generated\" advertising disclosure OR generative AI marketing agency"
-    },
-    {
-      "label": "Ukrainian 117",
-      "lang": "uk",
-      "standing": "press",
-      "hl": "uk",
-      "gl": "UA",
-      "ceid": "UA:uk",
-      "query": "\"data protection\" fine advertising OR tracking without consent ruling"
-    },
-    {
-      "label": "Greek 118",
-      "lang": "el",
-      "standing": "press",
-      "hl": "el",
-      "gl": "GR",
-      "ceid": "GR:el",
-      "query": "\"ad blocker\" OR tracking protection OR \"opt-out\" advertising default"
-    },
-    {
-      "label": "Greek 119",
-      "lang": "el",
-      "standing": "press",
-      "hl": "el",
-      "gl": "GR",
-      "ceid": "GR:el",
-      "query": "\"WPP\" OR Publicis OR Omnicom OR Dentsu agency merger OR market"
-    },
-    {
-      "label": "Greek 120",
-      "lang": "el",
-      "standing": "press",
-      "hl": "el",
-      "gl": "GR",
-      "ceid": "GR:el",
-      "query": "\"front group\" campaign OR astroturf OR manufactured doubt industry"
-    },
-    {
-      "label": "Persian 121",
-      "lang": "fa",
-      "standing": "press",
-      "hl": "fa",
-      "gl": "IR",
-      "ceid": "IR:fa",
-      "query": "\"targeted advertising\" OR microtargeting OR \"behavioural advertising\" ruling"
-    },
-    {
-      "label": "Persian 122",
-      "lang": "fa",
-      "standing": "press",
-      "hl": "fa",
-      "gl": "IR",
-      "ceid": "IR:fa",
-      "query": "\"surveillance advertising\" OR \"data broker\" OR \"real-time bidding\" complaint"
-    },
-    {
-      "label": "Persian 123",
-      "lang": "fa",
-      "standing": "press",
-      "hl": "fa",
-      "gl": "IR",
-      "ceid": "IR:fa",
-      "query": "\"dark patterns\" OR \"deceptive design\" fine OR ruling"
-    },
-    {
-      "label": "Vietnamese 124",
-      "lang": "vi",
-      "standing": "press",
-      "hl": "vi",
-      "gl": "VN",
-      "ceid": "VN:vi",
-      "query": "\"marketing to children\" OR kidfluencer OR \"children's code\" advertising"
-    },
-    {
-      "label": "Vietnamese 125",
-      "lang": "vi",
-      "standing": "press",
-      "hl": "vi",
-      "gl": "VN",
-      "ceid": "VN:vi",
-      "query": "\"junk food advertising\" ban OR watershed OR HFSS restrictions"
-    },
-    {
-      "label": "Vietnamese 126",
-      "lang": "vi",
-      "standing": "press",
-      "hl": "vi",
-      "gl": "VN",
-      "ceid": "VN:vi",
-      "query": "\"gambling advertising\" OR \"alcohol advertising\" ban OR sponsorship"
-    },
-    {
-      "label": "Thai 127",
-      "lang": "th",
-      "standing": "press",
-      "hl": "th",
-      "gl": "TH",
-      "ceid": "TH:th",
-      "query": "\"tobacco marketing\" OR vape advertising youth OR e-cigarette promotion"
-    },
-    {
-      "label": "Thai 128",
-      "lang": "th",
-      "standing": "press",
-      "hl": "th",
-      "gl": "TH",
-      "ceid": "TH:th",
-      "query": "greenwashing ruling OR \"green claims\" misleading OR \"carbon neutral\" claim banned"
-    },
-    {
-      "label": "Thai 129",
-      "lang": "th",
-      "standing": "press",
-      "hl": "th",
-      "gl": "TH",
-      "ceid": "TH:th",
-      "query": "\"advertising standards\" ruling OR complaint upheld OR ad banned"
-    },
-    {
-      "label": "Swahili (Kenya) 130",
-      "lang": "sw",
-      "standing": "press",
-      "hl": "sw",
-      "gl": "KE",
-      "ceid": "KE:sw",
-      "query": "\"influencer\" undisclosed advertising OR paid partnership rules"
-    },
-    {
-      "label": "Swahili (Kenya) 131",
-      "lang": "sw",
-      "standing": "press",
-      "hl": "sw",
-      "gl": "KE",
-      "ceid": "KE:sw",
-      "query": "\"political advertising\" rules OR ad library OR election ads transparency"
-    },
-    {
-      "label": "Swahili (Kenya) 132",
-      "lang": "sw",
-      "standing": "press",
-      "hl": "sw",
-      "gl": "KE",
-      "ceid": "KE:sw",
-      "query": "\"attention economy\" OR \"algorithmic feed\" harm OR addictive design"
-    },
-    {
-      "label": "Amharic (Ethiopia) 133",
-      "lang": "am",
-      "standing": "press",
-      "hl": "am",
-      "gl": "ET",
-      "ceid": "ET:am",
-      "query": "\"ad fraud\" OR \"brand safety\" OR made-for-advertising sites"
-    },
-    {
-      "label": "Amharic (Ethiopia) 134",
-      "lang": "am",
-      "standing": "press",
-      "hl": "am",
-      "gl": "ET",
-      "ceid": "ET:am",
-      "query": "adtech antitrust OR \"ad exchange\" ruling OR Google advertising monopoly"
-    },
-    {
-      "label": "Amharic (Ethiopia) 135",
-      "lang": "am",
-      "standing": "press",
-      "hl": "am",
-      "gl": "ET",
-      "ceid": "ET:am",
-      "query": "\"third-party cookies\" OR consent banner ruling OR GDPR advertising fine"
-    },
-    {
-      "label": "Hausa (Nigeria) 136",
-      "lang": "ha",
-      "standing": "press",
-      "hl": "ha",
-      "gl": "NG",
-      "ceid": "NG:ha",
-      "query": "\"search results\" manipulation OR ranking boosted OR fake reviews enforcement"
-    },
-    {
-      "label": "Hausa (Nigeria) 137",
-      "lang": "ha",
-      "standing": "press",
-      "hl": "ha",
-      "gl": "NG",
-      "ceid": "NG:ha",
-      "query": "\"Digital Services Act\" advertising OR \"Digital Markets Act\" enforcement"
-    },
-    {
-      "label": "Hausa (Nigeria) 138",
-      "lang": "ha",
-      "standing": "press",
-      "hl": "ha",
-      "gl": "NG",
-      "ceid": "NG:ha",
-      "query": "\"outdoor advertising\" ban city OR billboard restrictions public space"
-    }
-  ],
-  "events": [
-    {
-      "label": "Advertising regulators",
-      "lang": "en",
-      "standing": "official",
-      "hl": "en-US",
-      "gl": "US",
-      "ceid": "US:en",
-      "query": "\"advertising standards\" ruling OR ad banned misleading OR complaint upheld regulator"
-    },
-    {
-      "label": "Data protection enforcement",
-      "lang": "en",
-      "standing": "official",
-      "hl": "en-US",
-      "gl": "US",
-      "ceid": "US:en",
-      "query": "data protection fine advertising OR CNIL OR noyb complaint tracking consent"
-    },
-    {
-      "label": "Competition cases",
-      "lang": "en",
-      "standing": "official",
-      "hl": "en-US",
-      "gl": "US",
-      "ceid": "US:en",
-      "query": "adtech antitrust ruling OR advertising monopoly case OR ad exchange remedy"
-    },
-    {
-      "label": "EU digital rules",
-      "lang": "en",
-      "standing": "official",
-      "hl": "en-US",
-      "gl": "US",
-      "ceid": "US:en",
-      "query": "\"Digital Services Act\" advertising obligation OR \"Digital Markets Act\" enforcement"
-    },
-    {
-      "label": "Court rulings on advertising",
-      "lang": "en",
-      "standing": "official",
-      "hl": "en-US",
-      "gl": "US",
-      "ceid": "US:en",
-      "query": "court ruling advertising OR misleading marketing verdict OR targeting unlawful"
-    },
-    {
-      "label": "Tracking and adtech research",
-      "lang": "en",
-      "standing": "research",
-      "hl": "en-US",
-      "gl": "US",
-      "ceid": "US:en",
-      "query": "\"real-time bidding\" research OR data broker investigation OR tracking study"
-    },
-    {
-      "label": "Attention and design research",
-      "lang": "en",
-      "standing": "research",
-      "hl": "en-US",
-      "gl": "US",
-      "ceid": "US:en",
-      "query": "\"addictive design\" study OR engagement optimisation harm research"
-    },
-    {
-      "label": "Children and advertising",
-      "lang": "en",
-      "standing": "research",
-      "hl": "en-US",
-      "gl": "US",
-      "ceid": "US:en",
-      "query": "children advertising exposure study OR kidfluencer research OR age-appropriate design"
-    },
-    {
-      "label": "Greenwashing monitoring",
-      "lang": "en",
-      "standing": "research",
-      "hl": "en-US",
-      "gl": "US",
-      "ceid": "US:en",
-      "query": "greenwashing report OR green claims audit OR environmental claims study"
-    },
-    {
-      "label": "Industry concentration",
-      "lang": "en",
-      "standing": "research",
-      "hl": "en-US",
-      "gl": "US",
-      "ceid": "US:en",
-      "query": "advertising holding company merger OR agency market share OR duopoly digital ads"
-    },
-    {
-      "label": "Privacy campaigning",
-      "lang": "en",
-      "standing": "rights",
-      "hl": "en-US",
-      "gl": "US",
-      "ceid": "US:en",
-      "query": "privacy complaint advertising OR tracking campaign OR consent banner action"
-    },
-    {
-      "label": "Consumer protection",
-      "lang": "en",
-      "standing": "rights",
-      "hl": "en-US",
-      "gl": "US",
-      "ceid": "US:en",
-      "query": "misleading advertising complaint OR consumer group ad campaign OR dark patterns report"
-    },
-    {
-      "label": "Public space campaigns",
-      "lang": "en",
-      "standing": "rights",
-      "hl": "en-US",
-      "gl": "US",
-      "ceid": "US:en",
-      "query": "billboard ban campaign OR outdoor advertising restriction city OR subvertising"
-    },
-    {
-      "label": "Political ads transparency",
-      "lang": "en",
-      "standing": "rights",
-      "hl": "en-US",
-      "gl": "US",
-      "ceid": "US:en",
-      "query": "political ad transparency campaign OR dark ads investigation election"
-    },
-    {
-      "label": "Space and the night sky",
-      "lang": "en",
-      "standing": "official",
-      "hl": "en-US",
-      "gl": "US",
-      "ceid": "US:en",
-      "query": "satellite brightness OR \"dark and quiet skies\" OR orbital advertising proposal"
-    },
-    {
-      "label": "AI in advertising",
-      "lang": "en",
-      "standing": "research",
-      "hl": "en-US",
-      "gl": "US",
-      "ceid": "US:en",
-      "query": "generative AI advertising disclosure OR synthetic media marketing rules"
-    }
-  ]
+ "_note": [
+  "Sources for the advertising wire.",
+  "",
+  "direct: feeds proven working in the sibling Welcome to Your Galaxy repos.",
+  "  Nothing invented — an untested feed URL reports itself unreachable on every",
+  "  harvest and quietly makes the coverage figure a lie.",
+  "",
+  "gnews: Google News locale searches; the harvester builds the URL from",
+  "  hl / gl / ceid. Twenty-four queries rotate across 46 locales.",
+  "",
+  "events: subject searches for regulators, enforcement and recurring research.",
+  "",
+  "standing is provenance, not importance:",
+  "  official  advertising and data regulators, competition authorities, courts",
+  "  research  tracking and adtech research, industry and influence analysis",
+  "  press     general news across the locales",
+  "  rights    privacy and consumer organisations",
+  "",
+  "Worth adding, with URLs you have opened: the Advertising Standards Authority,",
+  "noyb, the Irish Council for Civil Liberties adtech work, Check My Ads,",
+  "AdAlert, Badvertising, the Center for Countering Digital Hate, and national",
+  "data protection authorities."
+ ],
+ "direct": [
+  {
+   "name": "European Commission",
+   "lang": "en",
+   "standing": "official",
+   "url": "https://ec.europa.eu/commission/presscorner/api/rss"
+  },
+  {
+   "name": "US Department of Justice",
+   "lang": "en",
+   "standing": "official",
+   "url": "https://www.justice.gov/feeds/opa/justice-news.xml"
+  },
+  {
+   "name": "OECD",
+   "lang": "en",
+   "standing": "official",
+   "url": "https://www.oecd.org/newsroom/index.xml"
+  },
+  {
+   "name": "World Health Organization",
+   "lang": "en",
+   "standing": "official",
+   "url": "https://www.who.int/rss-feeds/news-english.xml"
+  },
+  {
+   "name": "OHCHR — news",
+   "lang": "en",
+   "standing": "official",
+   "url": "https://www.ohchr.org/en/rss/news"
+  },
+  {
+   "name": "European Court of Human Rights",
+   "lang": "en",
+   "standing": "official",
+   "url": "https://www.echr.coe.int/rss"
+  },
+  {
+   "name": "Europol",
+   "lang": "en",
+   "standing": "official",
+   "url": "https://www.europol.europa.eu/rss.xml"
+  },
+  {
+   "name": "UNCTAD",
+   "lang": "en",
+   "standing": "official",
+   "url": "https://unctad.org/rss.xml"
+  },
+  {
+   "name": "Privacy International",
+   "lang": "en",
+   "standing": "rights",
+   "url": "https://privacyinternational.org/rss.xml"
+  },
+  {
+   "name": "EDRi",
+   "lang": "en",
+   "standing": "rights",
+   "url": "https://edri.org/feed/"
+  },
+  {
+   "name": "Access Now",
+   "lang": "en",
+   "standing": "rights",
+   "url": "https://www.accessnow.org/feed/"
+  },
+  {
+   "name": "Electronic Frontier Foundation",
+   "lang": "en",
+   "standing": "rights",
+   "url": "https://www.eff.org/rss/updates.xml"
+  },
+  {
+   "name": "Statewatch",
+   "lang": "en",
+   "standing": "rights",
+   "url": "https://www.statewatch.org/rss/"
+  },
+  {
+   "name": "Article 19",
+   "lang": "en",
+   "standing": "rights",
+   "url": "https://www.article19.org/feed/"
+  },
+  {
+   "name": "Public Citizen · Global Trade Watch",
+   "lang": "en",
+   "standing": "rights",
+   "url": "https://www.citizen.org/feed/"
+  },
+  {
+   "name": "Corporate Europe Observatory",
+   "lang": "en",
+   "standing": "rights",
+   "url": "https://corporateeurope.org/en/rss.xml"
+  },
+  {
+   "name": "Global Witness",
+   "lang": "en",
+   "standing": "rights",
+   "url": "https://www.globalwitness.org/en/rss/"
+  },
+  {
+   "name": "Transparency International",
+   "lang": "en",
+   "standing": "research",
+   "url": "https://www.transparency.org/en/rss"
+  },
+  {
+   "name": "Business & Human Rights Resource Centre",
+   "lang": "en",
+   "standing": "research",
+   "url": "https://www.business-humanrights.org/en/rss/"
+  },
+  {
+   "name": "Bellingcat",
+   "lang": "en",
+   "standing": "research",
+   "url": "https://www.bellingcat.com/feed/"
+  },
+  {
+   "name": "Transnational Institute",
+   "lang": "en",
+   "standing": "research",
+   "url": "https://www.tni.org/en/rss.xml"
+  },
+  {
+   "name": "ODI",
+   "lang": "en",
+   "standing": "research",
+   "url": "https://odi.org/en/feed/"
+  },
+  {
+   "name": "CEPR",
+   "lang": "en",
+   "standing": "research",
+   "url": "https://cepr.org/rss.xml"
+  },
+  {
+   "name": "Peterson Institute",
+   "lang": "en",
+   "standing": "research",
+   "url": "https://www.piie.com/rss.xml"
+  },
+  {
+   "name": "Tax Justice Network",
+   "lang": "en",
+   "standing": "research",
+   "url": "https://taxjustice.net/feed/"
+  },
+  {
+   "name": "Freedom House",
+   "lang": "en",
+   "standing": "research",
+   "url": "https://freedomhouse.org/rss.xml"
+  },
+  {
+   "name": "CIVICUS Monitor",
+   "lang": "en",
+   "standing": "research",
+   "url": "https://monitor.civicus.org/feed/"
+  },
+  {
+   "name": "The Intercept",
+   "lang": "en",
+   "standing": "press",
+   "url": "https://theintercept.com/feed/?rss"
+  },
+  {
+   "name": "The Marshall Project",
+   "lang": "en",
+   "standing": "press",
+   "url": "https://www.themarshallproject.org/rss/recent.rss"
+  }
+ ],
+ "gnews": [
+  {
+   "label": "English (US) · targeting",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-US",
+   "gl": "US",
+   "ceid": "US:en",
+   "theme": "targeting",
+   "query": "targeted advertising ban OR microtargeting rules OR profiling ads regulator"
+  },
+  {
+   "label": "English (US) · children",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-US",
+   "gl": "US",
+   "ceid": "US:en",
+   "theme": "children",
+   "query": "advertising to children ban OR junk food ads children OR influencer marketing minors"
+  },
+  {
+   "label": "English (US) · tracking",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-US",
+   "gl": "US",
+   "ceid": "US:en",
+   "theme": "tracking",
+   "query": "ad tracking fine OR cookie consent ruling OR data broker advertising"
+  },
+  {
+   "label": "English (US) · harmful",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-US",
+   "gl": "US",
+   "ceid": "US:en",
+   "theme": "harmful",
+   "query": "gambling advertising ban OR alcohol ads restriction OR tobacco advertising loophole"
+  },
+  {
+   "label": "English (US) · political",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-US",
+   "gl": "US",
+   "ceid": "US:en",
+   "theme": "political",
+   "query": "political advertising rules OR election ads transparency OR dark ads campaign"
+  },
+  {
+   "label": "English (US) · greenwash",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-US",
+   "gl": "US",
+   "ceid": "US:en",
+   "theme": "greenwash",
+   "query": "greenwashing advertising ruling OR misleading green claims ad ban"
+  },
+  {
+   "label": "English (US) · attention",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-US",
+   "gl": "US",
+   "ceid": "US:en",
+   "theme": "attention",
+   "query": "attention economy OR screen time engagement design OR dark patterns fine"
+  },
+  {
+   "label": "English (UK) · targeting",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-GB",
+   "gl": "GB",
+   "ceid": "GB:en",
+   "theme": "targeting",
+   "query": "targeted advertising ban OR microtargeting rules OR profiling ads regulator"
+  },
+  {
+   "label": "English (UK) · children",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-GB",
+   "gl": "GB",
+   "ceid": "GB:en",
+   "theme": "children",
+   "query": "advertising to children ban OR junk food ads children OR influencer marketing minors"
+  },
+  {
+   "label": "English (UK) · tracking",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-GB",
+   "gl": "GB",
+   "ceid": "GB:en",
+   "theme": "tracking",
+   "query": "ad tracking fine OR cookie consent ruling OR data broker advertising"
+  },
+  {
+   "label": "English (UK) · harmful",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-GB",
+   "gl": "GB",
+   "ceid": "GB:en",
+   "theme": "harmful",
+   "query": "gambling advertising ban OR alcohol ads restriction OR tobacco advertising loophole"
+  },
+  {
+   "label": "English (UK) · political",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-GB",
+   "gl": "GB",
+   "ceid": "GB:en",
+   "theme": "political",
+   "query": "political advertising rules OR election ads transparency OR dark ads campaign"
+  },
+  {
+   "label": "English (UK) · greenwash",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-GB",
+   "gl": "GB",
+   "ceid": "GB:en",
+   "theme": "greenwash",
+   "query": "greenwashing advertising ruling OR misleading green claims ad ban"
+  },
+  {
+   "label": "English (UK) · attention",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-GB",
+   "gl": "GB",
+   "ceid": "GB:en",
+   "theme": "attention",
+   "query": "attention economy OR screen time engagement design OR dark patterns fine"
+  },
+  {
+   "label": "English (India) · targeting",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-IN",
+   "gl": "IN",
+   "ceid": "IN:en",
+   "theme": "targeting",
+   "query": "targeted advertising ban OR microtargeting rules OR profiling ads regulator"
+  },
+  {
+   "label": "English (India) · children",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-IN",
+   "gl": "IN",
+   "ceid": "IN:en",
+   "theme": "children",
+   "query": "advertising to children ban OR junk food ads children OR influencer marketing minors"
+  },
+  {
+   "label": "English (India) · tracking",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-IN",
+   "gl": "IN",
+   "ceid": "IN:en",
+   "theme": "tracking",
+   "query": "ad tracking fine OR cookie consent ruling OR data broker advertising"
+  },
+  {
+   "label": "English (India) · harmful",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-IN",
+   "gl": "IN",
+   "ceid": "IN:en",
+   "theme": "harmful",
+   "query": "gambling advertising ban OR alcohol ads restriction OR tobacco advertising loophole"
+  },
+  {
+   "label": "English (India) · political",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-IN",
+   "gl": "IN",
+   "ceid": "IN:en",
+   "theme": "political",
+   "query": "political advertising rules OR election ads transparency OR dark ads campaign"
+  },
+  {
+   "label": "English (India) · greenwash",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-IN",
+   "gl": "IN",
+   "ceid": "IN:en",
+   "theme": "greenwash",
+   "query": "greenwashing advertising ruling OR misleading green claims ad ban"
+  },
+  {
+   "label": "English (India) · attention",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-IN",
+   "gl": "IN",
+   "ceid": "IN:en",
+   "theme": "attention",
+   "query": "attention economy OR screen time engagement design OR dark patterns fine"
+  },
+  {
+   "label": "English (Nigeria) · targeting",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-NG",
+   "gl": "NG",
+   "ceid": "NG:en",
+   "theme": "targeting",
+   "query": "targeted advertising ban OR microtargeting rules OR profiling ads regulator"
+  },
+  {
+   "label": "English (Nigeria) · children",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-NG",
+   "gl": "NG",
+   "ceid": "NG:en",
+   "theme": "children",
+   "query": "advertising to children ban OR junk food ads children OR influencer marketing minors"
+  },
+  {
+   "label": "English (Nigeria) · tracking",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-NG",
+   "gl": "NG",
+   "ceid": "NG:en",
+   "theme": "tracking",
+   "query": "ad tracking fine OR cookie consent ruling OR data broker advertising"
+  },
+  {
+   "label": "English (Nigeria) · harmful",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-NG",
+   "gl": "NG",
+   "ceid": "NG:en",
+   "theme": "harmful",
+   "query": "gambling advertising ban OR alcohol ads restriction OR tobacco advertising loophole"
+  },
+  {
+   "label": "English (Nigeria) · political",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-NG",
+   "gl": "NG",
+   "ceid": "NG:en",
+   "theme": "political",
+   "query": "political advertising rules OR election ads transparency OR dark ads campaign"
+  },
+  {
+   "label": "English (Nigeria) · greenwash",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-NG",
+   "gl": "NG",
+   "ceid": "NG:en",
+   "theme": "greenwash",
+   "query": "greenwashing advertising ruling OR misleading green claims ad ban"
+  },
+  {
+   "label": "English (Nigeria) · attention",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-NG",
+   "gl": "NG",
+   "ceid": "NG:en",
+   "theme": "attention",
+   "query": "attention economy OR screen time engagement design OR dark patterns fine"
+  },
+  {
+   "label": "English (Australia) · targeting",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-AU",
+   "gl": "AU",
+   "ceid": "AU:en",
+   "theme": "targeting",
+   "query": "targeted advertising ban OR microtargeting rules OR profiling ads regulator"
+  },
+  {
+   "label": "English (Australia) · children",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-AU",
+   "gl": "AU",
+   "ceid": "AU:en",
+   "theme": "children",
+   "query": "advertising to children ban OR junk food ads children OR influencer marketing minors"
+  },
+  {
+   "label": "English (Australia) · tracking",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-AU",
+   "gl": "AU",
+   "ceid": "AU:en",
+   "theme": "tracking",
+   "query": "ad tracking fine OR cookie consent ruling OR data broker advertising"
+  },
+  {
+   "label": "English (Australia) · harmful",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-AU",
+   "gl": "AU",
+   "ceid": "AU:en",
+   "theme": "harmful",
+   "query": "gambling advertising ban OR alcohol ads restriction OR tobacco advertising loophole"
+  },
+  {
+   "label": "English (Australia) · political",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-AU",
+   "gl": "AU",
+   "ceid": "AU:en",
+   "theme": "political",
+   "query": "political advertising rules OR election ads transparency OR dark ads campaign"
+  },
+  {
+   "label": "English (Australia) · greenwash",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-AU",
+   "gl": "AU",
+   "ceid": "AU:en",
+   "theme": "greenwash",
+   "query": "greenwashing advertising ruling OR misleading green claims ad ban"
+  },
+  {
+   "label": "English (Australia) · attention",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-AU",
+   "gl": "AU",
+   "ceid": "AU:en",
+   "theme": "attention",
+   "query": "attention economy OR screen time engagement design OR dark patterns fine"
+  },
+  {
+   "label": "English (South Africa) · targeting",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-ZA",
+   "gl": "ZA",
+   "ceid": "ZA:en",
+   "theme": "targeting",
+   "query": "targeted advertising ban OR microtargeting rules OR profiling ads regulator"
+  },
+  {
+   "label": "English (South Africa) · children",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-ZA",
+   "gl": "ZA",
+   "ceid": "ZA:en",
+   "theme": "children",
+   "query": "advertising to children ban OR junk food ads children OR influencer marketing minors"
+  },
+  {
+   "label": "English (South Africa) · tracking",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-ZA",
+   "gl": "ZA",
+   "ceid": "ZA:en",
+   "theme": "tracking",
+   "query": "ad tracking fine OR cookie consent ruling OR data broker advertising"
+  },
+  {
+   "label": "English (South Africa) · harmful",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-ZA",
+   "gl": "ZA",
+   "ceid": "ZA:en",
+   "theme": "harmful",
+   "query": "gambling advertising ban OR alcohol ads restriction OR tobacco advertising loophole"
+  },
+  {
+   "label": "English (South Africa) · political",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-ZA",
+   "gl": "ZA",
+   "ceid": "ZA:en",
+   "theme": "political",
+   "query": "political advertising rules OR election ads transparency OR dark ads campaign"
+  },
+  {
+   "label": "English (South Africa) · greenwash",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-ZA",
+   "gl": "ZA",
+   "ceid": "ZA:en",
+   "theme": "greenwash",
+   "query": "greenwashing advertising ruling OR misleading green claims ad ban"
+  },
+  {
+   "label": "English (South Africa) · attention",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-ZA",
+   "gl": "ZA",
+   "ceid": "ZA:en",
+   "theme": "attention",
+   "query": "attention economy OR screen time engagement design OR dark patterns fine"
+  },
+  {
+   "label": "Español (España) · targeting",
+   "lang": "es",
+   "standing": "press",
+   "hl": "es",
+   "gl": "ES",
+   "ceid": "ES:es",
+   "theme": "targeting",
+   "query": "publicidad segmentada prohibición OR microsegmentación anuncios OR perfilado publicitario"
+  },
+  {
+   "label": "Español (España) · children",
+   "lang": "es",
+   "standing": "press",
+   "hl": "es",
+   "gl": "ES",
+   "ceid": "ES:es",
+   "theme": "children",
+   "query": "publicidad dirigida a niños prohibición OR anuncios de comida basura infancia"
+  },
+  {
+   "label": "Español (España) · tracking",
+   "lang": "es",
+   "standing": "press",
+   "hl": "es",
+   "gl": "ES",
+   "ceid": "ES:es",
+   "theme": "tracking",
+   "query": "rastreo publicitario multa OR consentimiento de cookies sentencia OR intermediarios de datos publicidad"
+  },
+  {
+   "label": "Español (España) · harmful",
+   "lang": "es",
+   "standing": "press",
+   "hl": "es",
+   "gl": "ES",
+   "ceid": "ES:es",
+   "theme": "harmful",
+   "query": "publicidad de apuestas prohibición OR anuncios de alcohol restricción OR publicidad de tabaco"
+  },
+  {
+   "label": "Español (España) · political",
+   "lang": "es",
+   "standing": "press",
+   "hl": "es",
+   "gl": "ES",
+   "ceid": "ES:es",
+   "theme": "political",
+   "query": "publicidad política normas OR transparencia de anuncios electorales"
+  },
+  {
+   "label": "Español (España) · greenwash",
+   "lang": "es",
+   "standing": "press",
+   "hl": "es",
+   "gl": "ES",
+   "ceid": "ES:es",
+   "theme": "greenwash",
+   "query": "ecoblanqueo publicidad resolución OR afirmaciones ecológicas engañosas anuncio"
+  },
+  {
+   "label": "Español (España) · attention",
+   "lang": "es",
+   "standing": "press",
+   "hl": "es",
+   "gl": "ES",
+   "ceid": "ES:es",
+   "theme": "attention",
+   "query": "economía de la atención OR patrones oscuros multa OR diseño adictivo aplicaciones"
+  },
+  {
+   "label": "Español (México) · targeting",
+   "lang": "es",
+   "standing": "press",
+   "hl": "es-419",
+   "gl": "MX",
+   "ceid": "MX:es-419",
+   "theme": "targeting",
+   "query": "publicidad segmentada prohibición OR microsegmentación anuncios OR perfilado publicitario"
+  },
+  {
+   "label": "Español (México) · children",
+   "lang": "es",
+   "standing": "press",
+   "hl": "es-419",
+   "gl": "MX",
+   "ceid": "MX:es-419",
+   "theme": "children",
+   "query": "publicidad dirigida a niños prohibición OR anuncios de comida basura infancia"
+  },
+  {
+   "label": "Español (México) · tracking",
+   "lang": "es",
+   "standing": "press",
+   "hl": "es-419",
+   "gl": "MX",
+   "ceid": "MX:es-419",
+   "theme": "tracking",
+   "query": "rastreo publicitario multa OR consentimiento de cookies sentencia OR intermediarios de datos publicidad"
+  },
+  {
+   "label": "Español (México) · harmful",
+   "lang": "es",
+   "standing": "press",
+   "hl": "es-419",
+   "gl": "MX",
+   "ceid": "MX:es-419",
+   "theme": "harmful",
+   "query": "publicidad de apuestas prohibición OR anuncios de alcohol restricción OR publicidad de tabaco"
+  },
+  {
+   "label": "Español (México) · political",
+   "lang": "es",
+   "standing": "press",
+   "hl": "es-419",
+   "gl": "MX",
+   "ceid": "MX:es-419",
+   "theme": "political",
+   "query": "publicidad política normas OR transparencia de anuncios electorales"
+  },
+  {
+   "label": "Español (México) · greenwash",
+   "lang": "es",
+   "standing": "press",
+   "hl": "es-419",
+   "gl": "MX",
+   "ceid": "MX:es-419",
+   "theme": "greenwash",
+   "query": "ecoblanqueo publicidad resolución OR afirmaciones ecológicas engañosas anuncio"
+  },
+  {
+   "label": "Español (México) · attention",
+   "lang": "es",
+   "standing": "press",
+   "hl": "es-419",
+   "gl": "MX",
+   "ceid": "MX:es-419",
+   "theme": "attention",
+   "query": "economía de la atención OR patrones oscuros multa OR diseño adictivo aplicaciones"
+  },
+  {
+   "label": "Español (Argentina) · targeting",
+   "lang": "es",
+   "standing": "press",
+   "hl": "es-419",
+   "gl": "AR",
+   "ceid": "AR:es-419",
+   "theme": "targeting",
+   "query": "publicidad segmentada prohibición OR microsegmentación anuncios OR perfilado publicitario"
+  },
+  {
+   "label": "Español (Argentina) · children",
+   "lang": "es",
+   "standing": "press",
+   "hl": "es-419",
+   "gl": "AR",
+   "ceid": "AR:es-419",
+   "theme": "children",
+   "query": "publicidad dirigida a niños prohibición OR anuncios de comida basura infancia"
+  },
+  {
+   "label": "Español (Argentina) · tracking",
+   "lang": "es",
+   "standing": "press",
+   "hl": "es-419",
+   "gl": "AR",
+   "ceid": "AR:es-419",
+   "theme": "tracking",
+   "query": "rastreo publicitario multa OR consentimiento de cookies sentencia OR intermediarios de datos publicidad"
+  },
+  {
+   "label": "Español (Argentina) · harmful",
+   "lang": "es",
+   "standing": "press",
+   "hl": "es-419",
+   "gl": "AR",
+   "ceid": "AR:es-419",
+   "theme": "harmful",
+   "query": "publicidad de apuestas prohibición OR anuncios de alcohol restricción OR publicidad de tabaco"
+  },
+  {
+   "label": "Español (Argentina) · political",
+   "lang": "es",
+   "standing": "press",
+   "hl": "es-419",
+   "gl": "AR",
+   "ceid": "AR:es-419",
+   "theme": "political",
+   "query": "publicidad política normas OR transparencia de anuncios electorales"
+  },
+  {
+   "label": "Español (Argentina) · greenwash",
+   "lang": "es",
+   "standing": "press",
+   "hl": "es-419",
+   "gl": "AR",
+   "ceid": "AR:es-419",
+   "theme": "greenwash",
+   "query": "ecoblanqueo publicidad resolución OR afirmaciones ecológicas engañosas anuncio"
+  },
+  {
+   "label": "Español (Argentina) · attention",
+   "lang": "es",
+   "standing": "press",
+   "hl": "es-419",
+   "gl": "AR",
+   "ceid": "AR:es-419",
+   "theme": "attention",
+   "query": "economía de la atención OR patrones oscuros multa OR diseño adictivo aplicaciones"
+  },
+  {
+   "label": "Português (Brasil) · targeting",
+   "lang": "pt",
+   "standing": "press",
+   "hl": "pt-BR",
+   "gl": "BR",
+   "ceid": "BR:pt-419",
+   "theme": "targeting",
+   "query": "publicidade segmentada proibição OR microssegmentação anúncios OR perfilamento publicitário"
+  },
+  {
+   "label": "Português (Brasil) · children",
+   "lang": "pt",
+   "standing": "press",
+   "hl": "pt-BR",
+   "gl": "BR",
+   "ceid": "BR:pt-419",
+   "theme": "children",
+   "query": "publicidade infantil proibição OR anúncios de comida ultraprocessada crianças"
+  },
+  {
+   "label": "Português (Brasil) · tracking",
+   "lang": "pt",
+   "standing": "press",
+   "hl": "pt-BR",
+   "gl": "BR",
+   "ceid": "BR:pt-419",
+   "theme": "tracking",
+   "query": "rastreamento publicitário multa OR consentimento de cookies decisão OR corretores de dados publicidade"
+  },
+  {
+   "label": "Português (Brasil) · harmful",
+   "lang": "pt",
+   "standing": "press",
+   "hl": "pt-BR",
+   "gl": "BR",
+   "ceid": "BR:pt-419",
+   "theme": "harmful",
+   "query": "publicidade de apostas proibição OR anúncios de álcool restrição OR publicidade de tabaco"
+  },
+  {
+   "label": "Português (Brasil) · political",
+   "lang": "pt",
+   "standing": "press",
+   "hl": "pt-BR",
+   "gl": "BR",
+   "ceid": "BR:pt-419",
+   "theme": "political",
+   "query": "publicidade política regras OR transparência de anúncios eleitorais"
+  },
+  {
+   "label": "Português (Brasil) · greenwash",
+   "lang": "pt",
+   "standing": "press",
+   "hl": "pt-BR",
+   "gl": "BR",
+   "ceid": "BR:pt-419",
+   "theme": "greenwash",
+   "query": "greenwashing publicidade decisão OR alegações ambientais enganosas anúncio"
+  },
+  {
+   "label": "Português (Brasil) · attention",
+   "lang": "pt",
+   "standing": "press",
+   "hl": "pt-BR",
+   "gl": "BR",
+   "ceid": "BR:pt-419",
+   "theme": "attention",
+   "query": "economia da atenção OR padrões obscuros multa OR design viciante aplicativos"
+  },
+  {
+   "label": "Português (Portugal) · targeting",
+   "lang": "pt",
+   "standing": "press",
+   "hl": "pt-PT",
+   "gl": "PT",
+   "ceid": "PT:pt-150",
+   "theme": "targeting",
+   "query": "publicidade segmentada proibição OR microssegmentação anúncios OR perfilamento publicitário"
+  },
+  {
+   "label": "Português (Portugal) · children",
+   "lang": "pt",
+   "standing": "press",
+   "hl": "pt-PT",
+   "gl": "PT",
+   "ceid": "PT:pt-150",
+   "theme": "children",
+   "query": "publicidade infantil proibição OR anúncios de comida ultraprocessada crianças"
+  },
+  {
+   "label": "Português (Portugal) · tracking",
+   "lang": "pt",
+   "standing": "press",
+   "hl": "pt-PT",
+   "gl": "PT",
+   "ceid": "PT:pt-150",
+   "theme": "tracking",
+   "query": "rastreamento publicitário multa OR consentimento de cookies decisão OR corretores de dados publicidade"
+  },
+  {
+   "label": "Português (Portugal) · harmful",
+   "lang": "pt",
+   "standing": "press",
+   "hl": "pt-PT",
+   "gl": "PT",
+   "ceid": "PT:pt-150",
+   "theme": "harmful",
+   "query": "publicidade de apostas proibição OR anúncios de álcool restrição OR publicidade de tabaco"
+  },
+  {
+   "label": "Português (Portugal) · political",
+   "lang": "pt",
+   "standing": "press",
+   "hl": "pt-PT",
+   "gl": "PT",
+   "ceid": "PT:pt-150",
+   "theme": "political",
+   "query": "publicidade política regras OR transparência de anúncios eleitorais"
+  },
+  {
+   "label": "Português (Portugal) · greenwash",
+   "lang": "pt",
+   "standing": "press",
+   "hl": "pt-PT",
+   "gl": "PT",
+   "ceid": "PT:pt-150",
+   "theme": "greenwash",
+   "query": "greenwashing publicidade decisão OR alegações ambientais enganosas anúncio"
+  },
+  {
+   "label": "Português (Portugal) · attention",
+   "lang": "pt",
+   "standing": "press",
+   "hl": "pt-PT",
+   "gl": "PT",
+   "ceid": "PT:pt-150",
+   "theme": "attention",
+   "query": "economia da atenção OR padrões obscuros multa OR design viciante aplicativos"
+  },
+  {
+   "label": "Français · targeting",
+   "lang": "fr",
+   "standing": "press",
+   "hl": "fr",
+   "gl": "FR",
+   "ceid": "FR:fr",
+   "theme": "targeting",
+   "query": "publicité ciblée interdiction OR microciblage publicitaire OR profilage publicitaire"
+  },
+  {
+   "label": "Français · children",
+   "lang": "fr",
+   "standing": "press",
+   "hl": "fr",
+   "gl": "FR",
+   "ceid": "FR:fr",
+   "theme": "children",
+   "query": "publicité destinée aux enfants interdiction OR publicité alimentaire enfants"
+  },
+  {
+   "label": "Français · tracking",
+   "lang": "fr",
+   "standing": "press",
+   "hl": "fr",
+   "gl": "FR",
+   "ceid": "FR:fr",
+   "theme": "tracking",
+   "query": "traçage publicitaire amende OR consentement aux cookies décision OR courtiers en données publicité"
+  },
+  {
+   "label": "Français · harmful",
+   "lang": "fr",
+   "standing": "press",
+   "hl": "fr",
+   "gl": "FR",
+   "ceid": "FR:fr",
+   "theme": "harmful",
+   "query": "publicité pour les paris interdiction OR publicité alcool restriction OR publicité tabac"
+  },
+  {
+   "label": "Français · political",
+   "lang": "fr",
+   "standing": "press",
+   "hl": "fr",
+   "gl": "FR",
+   "ceid": "FR:fr",
+   "theme": "political",
+   "query": "publicité politique règles OR transparence des publicités électorales"
+  },
+  {
+   "label": "Français · greenwash",
+   "lang": "fr",
+   "standing": "press",
+   "hl": "fr",
+   "gl": "FR",
+   "ceid": "FR:fr",
+   "theme": "greenwash",
+   "query": "écoblanchiment publicité décision OR allégations environnementales trompeuses"
+  },
+  {
+   "label": "Français · attention",
+   "lang": "fr",
+   "standing": "press",
+   "hl": "fr",
+   "gl": "FR",
+   "ceid": "FR:fr",
+   "theme": "attention",
+   "query": "économie de l'attention OR \"dark patterns\" amende OR design addictif applications"
+  },
+  {
+   "label": "Français (Canada) · targeting",
+   "lang": "fr",
+   "standing": "press",
+   "hl": "fr",
+   "gl": "CA",
+   "ceid": "CA:fr",
+   "theme": "targeting",
+   "query": "publicité ciblée interdiction OR microciblage publicitaire OR profilage publicitaire"
+  },
+  {
+   "label": "Français (Canada) · children",
+   "lang": "fr",
+   "standing": "press",
+   "hl": "fr",
+   "gl": "CA",
+   "ceid": "CA:fr",
+   "theme": "children",
+   "query": "publicité destinée aux enfants interdiction OR publicité alimentaire enfants"
+  },
+  {
+   "label": "Français (Canada) · tracking",
+   "lang": "fr",
+   "standing": "press",
+   "hl": "fr",
+   "gl": "CA",
+   "ceid": "CA:fr",
+   "theme": "tracking",
+   "query": "traçage publicitaire amende OR consentement aux cookies décision OR courtiers en données publicité"
+  },
+  {
+   "label": "Français (Canada) · harmful",
+   "lang": "fr",
+   "standing": "press",
+   "hl": "fr",
+   "gl": "CA",
+   "ceid": "CA:fr",
+   "theme": "harmful",
+   "query": "publicité pour les paris interdiction OR publicité alcool restriction OR publicité tabac"
+  },
+  {
+   "label": "Français (Canada) · political",
+   "lang": "fr",
+   "standing": "press",
+   "hl": "fr",
+   "gl": "CA",
+   "ceid": "CA:fr",
+   "theme": "political",
+   "query": "publicité politique règles OR transparence des publicités électorales"
+  },
+  {
+   "label": "Français (Canada) · greenwash",
+   "lang": "fr",
+   "standing": "press",
+   "hl": "fr",
+   "gl": "CA",
+   "ceid": "CA:fr",
+   "theme": "greenwash",
+   "query": "écoblanchiment publicité décision OR allégations environnementales trompeuses"
+  },
+  {
+   "label": "Français (Canada) · attention",
+   "lang": "fr",
+   "standing": "press",
+   "hl": "fr",
+   "gl": "CA",
+   "ceid": "CA:fr",
+   "theme": "attention",
+   "query": "économie de l'attention OR \"dark patterns\" amende OR design addictif applications"
+  },
+  {
+   "label": "Deutsch · targeting",
+   "lang": "de",
+   "standing": "press",
+   "hl": "de",
+   "gl": "DE",
+   "ceid": "DE:de",
+   "theme": "targeting",
+   "query": "personalisierte Werbung Verbot OR Microtargeting Werbung OR Profilbildung Werbung"
+  },
+  {
+   "label": "Deutsch · children",
+   "lang": "de",
+   "standing": "press",
+   "hl": "de",
+   "gl": "DE",
+   "ceid": "DE:de",
+   "theme": "children",
+   "query": "Kinderwerbung Verbot OR Werbung für ungesunde Lebensmittel Kinder"
+  },
+  {
+   "label": "Deutsch · tracking",
+   "lang": "de",
+   "standing": "press",
+   "hl": "de",
+   "gl": "DE",
+   "ceid": "DE:de",
+   "theme": "tracking",
+   "query": "Werbetracking Bußgeld OR Cookie-Einwilligung Urteil OR Datenhändler Werbung"
+  },
+  {
+   "label": "Deutsch · harmful",
+   "lang": "de",
+   "standing": "press",
+   "hl": "de",
+   "gl": "DE",
+   "ceid": "DE:de",
+   "theme": "harmful",
+   "query": "Glücksspielwerbung Verbot OR Alkoholwerbung Beschränkung OR Tabakwerbung"
+  },
+  {
+   "label": "Deutsch · political",
+   "lang": "de",
+   "standing": "press",
+   "hl": "de",
+   "gl": "DE",
+   "ceid": "DE:de",
+   "theme": "political",
+   "query": "politische Werbung Regeln OR Transparenz Wahlwerbung"
+  },
+  {
+   "label": "Deutsch · greenwash",
+   "lang": "de",
+   "standing": "press",
+   "hl": "de",
+   "gl": "DE",
+   "ceid": "DE:de",
+   "theme": "greenwash",
+   "query": "Greenwashing Werbung Urteil OR irreführende Umweltaussagen Werbung"
+  },
+  {
+   "label": "Deutsch · attention",
+   "lang": "de",
+   "standing": "press",
+   "hl": "de",
+   "gl": "DE",
+   "ceid": "DE:de",
+   "theme": "attention",
+   "query": "Aufmerksamkeitsökonomie OR \"Dark Patterns\" Bußgeld OR suchterzeugendes Design"
+  },
+  {
+   "label": "Italiano · targeting",
+   "lang": "it",
+   "standing": "press",
+   "hl": "it",
+   "gl": "IT",
+   "ceid": "IT:it",
+   "theme": "targeting",
+   "query": "pubblicità mirata divieto OR microtargeting pubblicitario OR profilazione pubblicitaria"
+  },
+  {
+   "label": "Italiano · children",
+   "lang": "it",
+   "standing": "press",
+   "hl": "it",
+   "gl": "IT",
+   "ceid": "IT:it",
+   "theme": "children",
+   "query": "pubblicità rivolta ai bambini divieto OR spot alimentari bambini"
+  },
+  {
+   "label": "Italiano · tracking",
+   "lang": "it",
+   "standing": "press",
+   "hl": "it",
+   "gl": "IT",
+   "ceid": "IT:it",
+   "theme": "tracking",
+   "query": "tracciamento pubblicitario multa OR consenso ai cookie sentenza OR data broker pubblicità"
+  },
+  {
+   "label": "Italiano · harmful",
+   "lang": "it",
+   "standing": "press",
+   "hl": "it",
+   "gl": "IT",
+   "ceid": "IT:it",
+   "theme": "harmful",
+   "query": "pubblicità del gioco d'azzardo divieto OR pubblicità alcol restrizione"
+  },
+  {
+   "label": "Italiano · political",
+   "lang": "it",
+   "standing": "press",
+   "hl": "it",
+   "gl": "IT",
+   "ceid": "IT:it",
+   "theme": "political",
+   "query": "pubblicità politica regole OR trasparenza degli annunci elettorali"
+  },
+  {
+   "label": "Italiano · greenwash",
+   "lang": "it",
+   "standing": "press",
+   "hl": "it",
+   "gl": "IT",
+   "ceid": "IT:it",
+   "theme": "greenwash",
+   "query": "greenwashing pubblicità decisione OR dichiarazioni ambientali ingannevoli"
+  },
+  {
+   "label": "Italiano · attention",
+   "lang": "it",
+   "standing": "press",
+   "hl": "it",
+   "gl": "IT",
+   "ceid": "IT:it",
+   "theme": "attention",
+   "query": "economia dell'attenzione OR \"dark pattern\" multa OR design che crea dipendenza"
+  },
+  {
+   "label": "Nederlands · targeting",
+   "lang": "nl",
+   "standing": "press",
+   "hl": "nl",
+   "gl": "NL",
+   "ceid": "NL:nl",
+   "theme": "targeting",
+   "query": "gerichte reclame verbod OR microtargeting advertenties OR profilering reclame"
+  },
+  {
+   "label": "Nederlands · children",
+   "lang": "nl",
+   "standing": "press",
+   "hl": "nl",
+   "gl": "NL",
+   "ceid": "NL:nl",
+   "theme": "children",
+   "query": "kinderreclame verbod OR reclame ongezond eten kinderen"
+  },
+  {
+   "label": "Nederlands · tracking",
+   "lang": "nl",
+   "standing": "press",
+   "hl": "nl",
+   "gl": "NL",
+   "ceid": "NL:nl",
+   "theme": "tracking",
+   "query": "advertentietracking boete OR cookietoestemming uitspraak OR datahandelaren reclame"
+  },
+  {
+   "label": "Nederlands · harmful",
+   "lang": "nl",
+   "standing": "press",
+   "hl": "nl",
+   "gl": "NL",
+   "ceid": "NL:nl",
+   "theme": "harmful",
+   "query": "gokreclame verbod OR alcoholreclame beperking OR tabaksreclame"
+  },
+  {
+   "label": "Nederlands · greenwash",
+   "lang": "nl",
+   "standing": "press",
+   "hl": "nl",
+   "gl": "NL",
+   "ceid": "NL:nl",
+   "theme": "greenwash",
+   "query": "greenwashing reclame uitspraak OR misleidende duurzaamheidsclaims"
+  },
+  {
+   "label": "Nederlands · attention",
+   "lang": "nl",
+   "standing": "press",
+   "hl": "nl",
+   "gl": "NL",
+   "ceid": "NL:nl",
+   "theme": "attention",
+   "query": "aandachtseconomie OR \"dark patterns\" boete OR verslavend ontwerp apps"
+  },
+  {
+   "label": "Polski · targeting",
+   "lang": "pl",
+   "standing": "press",
+   "hl": "pl",
+   "gl": "PL",
+   "ceid": "PL:pl",
+   "theme": "targeting",
+   "query": "reklama targetowana zakaz OR mikrotargetowanie reklam OR profilowanie reklamowe"
+  },
+  {
+   "label": "Polski · children",
+   "lang": "pl",
+   "standing": "press",
+   "hl": "pl",
+   "gl": "PL",
+   "ceid": "PL:pl",
+   "theme": "children",
+   "query": "reklama skierowana do dzieci zakaz OR reklamy niezdrowej żywności dzieci"
+  },
+  {
+   "label": "Polski · tracking",
+   "lang": "pl",
+   "standing": "press",
+   "hl": "pl",
+   "gl": "PL",
+   "ceid": "PL:pl",
+   "theme": "tracking",
+   "query": "śledzenie reklamowe kara OR zgoda na cookies wyrok OR brokerzy danych reklama"
+  },
+  {
+   "label": "Polski · harmful",
+   "lang": "pl",
+   "standing": "press",
+   "hl": "pl",
+   "gl": "PL",
+   "ceid": "PL:pl",
+   "theme": "harmful",
+   "query": "reklama hazardu zakaz OR reklama alkoholu ograniczenia"
+  },
+  {
+   "label": "Polski · political",
+   "lang": "pl",
+   "standing": "press",
+   "hl": "pl",
+   "gl": "PL",
+   "ceid": "PL:pl",
+   "theme": "political",
+   "query": "reklama polityczna zasady OR przejrzystość reklam wyborczych"
+  },
+  {
+   "label": "Polski · greenwash",
+   "lang": "pl",
+   "standing": "press",
+   "hl": "pl",
+   "gl": "PL",
+   "ceid": "PL:pl",
+   "theme": "greenwash",
+   "query": "greenwashing reklama decyzja OR wprowadzające w błąd deklaracje ekologiczne"
+  },
+  {
+   "label": "Русский · targeting",
+   "lang": "ru",
+   "standing": "press",
+   "hl": "ru",
+   "gl": "RU",
+   "ceid": "RU:ru",
+   "theme": "targeting",
+   "query": "таргетированная реклама запрет OR микротаргетинг рекламы OR профилирование реклама"
+  },
+  {
+   "label": "Русский · children",
+   "lang": "ru",
+   "standing": "press",
+   "hl": "ru",
+   "gl": "RU",
+   "ceid": "RU:ru",
+   "theme": "children",
+   "query": "реклама для детей запрет OR реклама вредной еды дети"
+  },
+  {
+   "label": "Русский · tracking",
+   "lang": "ru",
+   "standing": "press",
+   "hl": "ru",
+   "gl": "RU",
+   "ceid": "RU:ru",
+   "theme": "tracking",
+   "query": "рекламное слежение штраф OR согласие на cookie решение OR брокеры данных реклама"
+  },
+  {
+   "label": "Русский · harmful",
+   "lang": "ru",
+   "standing": "press",
+   "hl": "ru",
+   "gl": "RU",
+   "ceid": "RU:ru",
+   "theme": "harmful",
+   "query": "реклама азартных игр запрет OR реклама алкоголя ограничение"
+  },
+  {
+   "label": "Русский · political",
+   "lang": "ru",
+   "standing": "press",
+   "hl": "ru",
+   "gl": "RU",
+   "ceid": "RU:ru",
+   "theme": "political",
+   "query": "политическая реклама правила OR прозрачность предвыборной рекламы"
+  },
+  {
+   "label": "Русский · attention",
+   "lang": "ru",
+   "standing": "press",
+   "hl": "ru",
+   "gl": "RU",
+   "ceid": "RU:ru",
+   "theme": "attention",
+   "query": "экономика внимания OR тёмные паттерны штраф OR затягивающий дизайн"
+  },
+  {
+   "label": "Türkçe · targeting",
+   "lang": "tr",
+   "standing": "press",
+   "hl": "tr",
+   "gl": "TR",
+   "ceid": "TR:tr",
+   "theme": "targeting",
+   "query": "hedefli reklam yasağı OR mikro hedefleme reklam OR profilleme reklamcılık"
+  },
+  {
+   "label": "Türkçe · children",
+   "lang": "tr",
+   "standing": "press",
+   "hl": "tr",
+   "gl": "TR",
+   "ceid": "TR:tr",
+   "theme": "children",
+   "query": "çocuklara yönelik reklam yasağı OR abur cubur reklamı çocuk"
+  },
+  {
+   "label": "Türkçe · tracking",
+   "lang": "tr",
+   "standing": "press",
+   "hl": "tr",
+   "gl": "TR",
+   "ceid": "TR:tr",
+   "theme": "tracking",
+   "query": "reklam takibi ceza OR çerez onayı karar OR veri simsarları reklam"
+  },
+  {
+   "label": "Türkçe · harmful",
+   "lang": "tr",
+   "standing": "press",
+   "hl": "tr",
+   "gl": "TR",
+   "ceid": "TR:tr",
+   "theme": "harmful",
+   "query": "kumar reklamı yasağı OR alkol reklamı kısıtlama OR tütün reklamı"
+  },
+  {
+   "label": "Türkçe · political",
+   "lang": "tr",
+   "standing": "press",
+   "hl": "tr",
+   "gl": "TR",
+   "ceid": "TR:tr",
+   "theme": "political",
+   "query": "siyasi reklam kuralları OR seçim reklamları şeffaflık"
+  },
+  {
+   "label": "Bahasa Indonesia · targeting",
+   "lang": "id",
+   "standing": "press",
+   "hl": "id",
+   "gl": "ID",
+   "ceid": "ID:id",
+   "theme": "targeting",
+   "query": "iklan bertarget larangan OR penargetan mikro iklan OR profil pengguna iklan"
+  },
+  {
+   "label": "Bahasa Indonesia · children",
+   "lang": "id",
+   "standing": "press",
+   "hl": "id",
+   "gl": "ID",
+   "ceid": "ID:id",
+   "theme": "children",
+   "query": "iklan untuk anak larangan OR iklan makanan tidak sehat anak"
+  },
+  {
+   "label": "Bahasa Indonesia · tracking",
+   "lang": "id",
+   "standing": "press",
+   "hl": "id",
+   "gl": "ID",
+   "ceid": "ID:id",
+   "theme": "tracking",
+   "query": "pelacakan iklan denda OR persetujuan cookie putusan OR broker data iklan"
+  },
+  {
+   "label": "Bahasa Indonesia · harmful",
+   "lang": "id",
+   "standing": "press",
+   "hl": "id",
+   "gl": "ID",
+   "ceid": "ID:id",
+   "theme": "harmful",
+   "query": "iklan judi larangan OR iklan alkohol pembatasan OR iklan rokok"
+  },
+  {
+   "label": "Bahasa Indonesia · political",
+   "lang": "id",
+   "standing": "press",
+   "hl": "id",
+   "gl": "ID",
+   "ceid": "ID:id",
+   "theme": "political",
+   "query": "iklan politik aturan OR transparansi iklan kampanye"
+  },
+  {
+   "label": "Tiếng Việt · children",
+   "lang": "vi",
+   "standing": "press",
+   "hl": "vi",
+   "gl": "VN",
+   "ceid": "VN:vi",
+   "theme": "children",
+   "query": "quảng cáo nhắm vào trẻ em OR quảng cáo thực phẩm không lành mạnh trẻ em"
+  },
+  {
+   "label": "Tiếng Việt · harmful",
+   "lang": "vi",
+   "standing": "press",
+   "hl": "vi",
+   "gl": "VN",
+   "ceid": "VN:vi",
+   "theme": "harmful",
+   "query": "quảng cáo cá cược cấm OR quảng cáo rượu bia hạn chế OR quảng cáo thuốc lá"
+  },
+  {
+   "label": "ไทย · children",
+   "lang": "th",
+   "standing": "press",
+   "hl": "th",
+   "gl": "TH",
+   "ceid": "TH:th",
+   "theme": "children",
+   "query": "โฆษณาถึงเด็ก ห้าม OR โฆษณาอาหารขยะ เด็ก"
+  },
+  {
+   "label": "ไทย · harmful",
+   "lang": "th",
+   "standing": "press",
+   "hl": "th",
+   "gl": "TH",
+   "ceid": "TH:th",
+   "theme": "harmful",
+   "query": "โฆษณาพนัน ห้าม OR โฆษณาเครื่องดื่มแอลกอฮอล์ จำกัด"
+  },
+  {
+   "label": "日本語 · targeting",
+   "lang": "ja",
+   "standing": "press",
+   "hl": "ja",
+   "gl": "JP",
+   "ceid": "JP:ja",
+   "theme": "targeting",
+   "query": "ターゲティング広告 規制 OR 行動ターゲティング 禁止 OR プロファイリング 広告"
+  },
+  {
+   "label": "日本語 · children",
+   "lang": "ja",
+   "standing": "press",
+   "hl": "ja",
+   "gl": "JP",
+   "ceid": "JP:ja",
+   "theme": "children",
+   "query": "子ども向け広告 規制 OR 子どもへの食品広告 制限"
+  },
+  {
+   "label": "日本語 · tracking",
+   "lang": "ja",
+   "standing": "press",
+   "hl": "ja",
+   "gl": "JP",
+   "ceid": "JP:ja",
+   "theme": "tracking",
+   "query": "広告トラッキング 制裁金 OR クッキー同意 判決 OR データブローカー 広告"
+  },
+  {
+   "label": "日本語 · harmful",
+   "lang": "ja",
+   "standing": "press",
+   "hl": "ja",
+   "gl": "JP",
+   "ceid": "JP:ja",
+   "theme": "harmful",
+   "query": "ギャンブル広告 規制 OR 酒類広告 制限 OR たばこ広告"
+  },
+  {
+   "label": "日本語 · political",
+   "lang": "ja",
+   "standing": "press",
+   "hl": "ja",
+   "gl": "JP",
+   "ceid": "JP:ja",
+   "theme": "political",
+   "query": "政治広告 規制 OR 選挙広告 透明性"
+  },
+  {
+   "label": "日本語 · greenwash",
+   "lang": "ja",
+   "standing": "press",
+   "hl": "ja",
+   "gl": "JP",
+   "ceid": "JP:ja",
+   "theme": "greenwash",
+   "query": "グリーンウォッシュ 広告 OR 環境訴求 誤認"
+  },
+  {
+   "label": "日本語 · attention",
+   "lang": "ja",
+   "standing": "press",
+   "hl": "ja",
+   "gl": "JP",
+   "ceid": "JP:ja",
+   "theme": "attention",
+   "query": "アテンション・エコノミー OR ダークパターン 制裁 OR 依存的な設計"
+  },
+  {
+   "label": "한국어 · targeting",
+   "lang": "ko",
+   "standing": "press",
+   "hl": "ko",
+   "gl": "KR",
+   "ceid": "KR:ko",
+   "theme": "targeting",
+   "query": "맞춤형 광고 규제 OR 표적 광고 금지 OR 프로파일링 광고"
+  },
+  {
+   "label": "한국어 · children",
+   "lang": "ko",
+   "standing": "press",
+   "hl": "ko",
+   "gl": "KR",
+   "ceid": "KR:ko",
+   "theme": "children",
+   "query": "어린이 대상 광고 규제 OR 어린이 식품 광고 제한"
+  },
+  {
+   "label": "한국어 · tracking",
+   "lang": "ko",
+   "standing": "press",
+   "hl": "ko",
+   "gl": "KR",
+   "ceid": "KR:ko",
+   "theme": "tracking",
+   "query": "광고 추적 과징금 OR 쿠키 동의 판결 OR 데이터 브로커 광고"
+  },
+  {
+   "label": "한국어 · harmful",
+   "lang": "ko",
+   "standing": "press",
+   "hl": "ko",
+   "gl": "KR",
+   "ceid": "KR:ko",
+   "theme": "harmful",
+   "query": "도박 광고 규제 OR 주류 광고 제한 OR 담배 광고"
+  },
+  {
+   "label": "한국어 · political",
+   "lang": "ko",
+   "standing": "press",
+   "hl": "ko",
+   "gl": "KR",
+   "ceid": "KR:ko",
+   "theme": "political",
+   "query": "정치 광고 규제 OR 선거 광고 투명성"
+  },
+  {
+   "label": "한국어 · greenwash",
+   "lang": "ko",
+   "standing": "press",
+   "hl": "ko",
+   "gl": "KR",
+   "ceid": "KR:ko",
+   "theme": "greenwash",
+   "query": "그린워싱 광고 OR 친환경 허위 광고"
+  },
+  {
+   "label": "한국어 · attention",
+   "lang": "ko",
+   "standing": "press",
+   "hl": "ko",
+   "gl": "KR",
+   "ceid": "KR:ko",
+   "theme": "attention",
+   "query": "관심 경제 OR 다크패턴 제재 OR 중독적 설계"
+  },
+  {
+   "label": "中文 (台灣) · targeting",
+   "lang": "zh",
+   "standing": "press",
+   "hl": "zh-TW",
+   "gl": "TW",
+   "ceid": "TW:zh-Hant",
+   "theme": "targeting",
+   "query": "定向廣告 監管 OR 精準廣告 禁令 OR 使用者畫像 廣告"
+  },
+  {
+   "label": "中文 (台灣) · children",
+   "lang": "zh",
+   "standing": "press",
+   "hl": "zh-TW",
+   "gl": "TW",
+   "ceid": "TW:zh-Hant",
+   "theme": "children",
+   "query": "兒童廣告 限制 OR 面向兒童 食品廣告 監管"
+  },
+  {
+   "label": "中文 (台灣) · tracking",
+   "lang": "zh",
+   "standing": "press",
+   "hl": "zh-TW",
+   "gl": "TW",
+   "ceid": "TW:zh-Hant",
+   "theme": "tracking",
+   "query": "廣告追蹤 罰款 OR cookie 同意 判決 OR 資料經紀商 廣告"
+  },
+  {
+   "label": "中文 (台灣) · harmful",
+   "lang": "zh",
+   "standing": "press",
+   "hl": "zh-TW",
+   "gl": "TW",
+   "ceid": "TW:zh-Hant",
+   "theme": "harmful",
+   "query": "博彩廣告 禁令 OR 酒類廣告 限制 OR 菸草廣告"
+  },
+  {
+   "label": "中文 (台灣) · political",
+   "lang": "zh",
+   "standing": "press",
+   "hl": "zh-TW",
+   "gl": "TW",
+   "ceid": "TW:zh-Hant",
+   "theme": "political",
+   "query": "政治廣告 規則 OR 選舉廣告 透明度"
+  },
+  {
+   "label": "中文 (台灣) · greenwash",
+   "lang": "zh",
+   "standing": "press",
+   "hl": "zh-TW",
+   "gl": "TW",
+   "ceid": "TW:zh-Hant",
+   "theme": "greenwash",
+   "query": "漂綠 廣告 OR 環保宣傳 誤導"
+  },
+  {
+   "label": "中文 (台灣) · attention",
+   "lang": "zh",
+   "standing": "press",
+   "hl": "zh-TW",
+   "gl": "TW",
+   "ceid": "TW:zh-Hant",
+   "theme": "attention",
+   "query": "注意力經濟 OR 暗黑模式 處罰 OR 成癮式設計"
+  },
+  {
+   "label": "中文 (香港) · targeting",
+   "lang": "zh",
+   "standing": "press",
+   "hl": "zh-HK",
+   "gl": "HK",
+   "ceid": "HK:zh-Hant",
+   "theme": "targeting",
+   "query": "定向廣告 監管 OR 精準廣告 禁令 OR 用戶畫像 廣告"
+  },
+  {
+   "label": "中文 (香港) · children",
+   "lang": "zh",
+   "standing": "press",
+   "hl": "zh-HK",
+   "gl": "HK",
+   "ceid": "HK:zh-Hant",
+   "theme": "children",
+   "query": "兒童廣告 限制 OR 面向兒童 食品廣告 監管"
+  },
+  {
+   "label": "中文 (香港) · tracking",
+   "lang": "zh",
+   "standing": "press",
+   "hl": "zh-HK",
+   "gl": "HK",
+   "ceid": "HK:zh-Hant",
+   "theme": "tracking",
+   "query": "廣告追蹤 罰款 OR cookie 同意 判決 OR 數據經紀商 廣告"
+  },
+  {
+   "label": "中文 (香港) · harmful",
+   "lang": "zh",
+   "standing": "press",
+   "hl": "zh-HK",
+   "gl": "HK",
+   "ceid": "HK:zh-Hant",
+   "theme": "harmful",
+   "query": "博彩廣告 禁令 OR 酒類廣告 限制 OR 煙草廣告"
+  },
+  {
+   "label": "中文 (香港) · political",
+   "lang": "zh",
+   "standing": "press",
+   "hl": "zh-HK",
+   "gl": "HK",
+   "ceid": "HK:zh-Hant",
+   "theme": "political",
+   "query": "政治廣告 規則 OR 選舉廣告 透明度"
+  },
+  {
+   "label": "中文 (香港) · greenwash",
+   "lang": "zh",
+   "standing": "press",
+   "hl": "zh-HK",
+   "gl": "HK",
+   "ceid": "HK:zh-Hant",
+   "theme": "greenwash",
+   "query": "漂綠 廣告 OR 環保宣傳 誤導"
+  },
+  {
+   "label": "中文 (香港) · attention",
+   "lang": "zh",
+   "standing": "press",
+   "hl": "zh-HK",
+   "gl": "HK",
+   "ceid": "HK:zh-Hant",
+   "theme": "attention",
+   "query": "注意力經濟 OR 暗黑模式 處罰 OR 成癮式設計"
+  },
+  {
+   "label": "हिन्दी · children",
+   "lang": "hi",
+   "standing": "press",
+   "hl": "hi",
+   "gl": "IN",
+   "ceid": "IN:hi",
+   "theme": "children",
+   "query": "बच्चों को लक्षित विज्ञापन प्रतिबंध OR जंक फूड विज्ञापन बच्चे"
+  },
+  {
+   "label": "العربية (مصر) · targeting",
+   "lang": "ar",
+   "standing": "press",
+   "hl": "ar",
+   "gl": "EG",
+   "ceid": "EG:ar",
+   "theme": "targeting",
+   "query": "الإعلانات الموجهة حظر OR الاستهداف الدقيق إعلانات"
+  },
+  {
+   "label": "العربية (مصر) · children",
+   "lang": "ar",
+   "standing": "press",
+   "hl": "ar",
+   "gl": "EG",
+   "ceid": "EG:ar",
+   "theme": "children",
+   "query": "إعلانات موجهة للأطفال حظر OR إعلانات الأطعمة غير الصحية أطفال"
+  },
+  {
+   "label": "العربية (مصر) · tracking",
+   "lang": "ar",
+   "standing": "press",
+   "hl": "ar",
+   "gl": "EG",
+   "ceid": "EG:ar",
+   "theme": "tracking",
+   "query": "تتبع الإعلانات غرامة OR موافقة ملفات الارتباط حكم"
+  },
+  {
+   "label": "العربية (الإمارات) · targeting",
+   "lang": "ar",
+   "standing": "press",
+   "hl": "ar",
+   "gl": "AE",
+   "ceid": "AE:ar",
+   "theme": "targeting",
+   "query": "الإعلانات الموجهة حظر OR الاستهداف الدقيق إعلانات"
+  },
+  {
+   "label": "العربية (الإمارات) · children",
+   "lang": "ar",
+   "standing": "press",
+   "hl": "ar",
+   "gl": "AE",
+   "ceid": "AE:ar",
+   "theme": "children",
+   "query": "إعلانات موجهة للأطفال حظر OR إعلانات الأطعمة غير الصحية أطفال"
+  },
+  {
+   "label": "العربية (الإمارات) · tracking",
+   "lang": "ar",
+   "standing": "press",
+   "hl": "ar",
+   "gl": "AE",
+   "ceid": "AE:ar",
+   "theme": "tracking",
+   "query": "تتبع الإعلانات غرامة OR موافقة ملفات الارتباط حكم"
+  },
+  {
+   "label": "Ελληνικά · targeting",
+   "lang": "el",
+   "standing": "press",
+   "hl": "el",
+   "gl": "GR",
+   "ceid": "GR:el",
+   "theme": "targeting",
+   "query": "στοχευμένη διαφήμιση απαγόρευση OR μικροστόχευση διαφημίσεων"
+  },
+  {
+   "label": "Ελληνικά · children",
+   "lang": "el",
+   "standing": "press",
+   "hl": "el",
+   "gl": "GR",
+   "ceid": "GR:el",
+   "theme": "children",
+   "query": "διαφήμιση σε παιδιά απαγόρευση OR διαφημίσεις τροφίμων παιδιά"
+  },
+  {
+   "label": "Ελληνικά · tracking",
+   "lang": "el",
+   "standing": "press",
+   "hl": "el",
+   "gl": "GR",
+   "ceid": "GR:el",
+   "theme": "tracking",
+   "query": "παρακολούθηση διαφημίσεων πρόστιμο OR συγκατάθεση cookies απόφαση"
+  },
+  {
+   "label": "Ελληνικά · harmful",
+   "lang": "el",
+   "standing": "press",
+   "hl": "el",
+   "gl": "GR",
+   "ceid": "GR:el",
+   "theme": "harmful",
+   "query": "διαφήμιση τζόγου απαγόρευση OR διαφήμιση αλκοόλ περιορισμός"
+  },
+  {
+   "label": "Ελληνικά · political",
+   "lang": "el",
+   "standing": "press",
+   "hl": "el",
+   "gl": "GR",
+   "ceid": "GR:el",
+   "theme": "political",
+   "query": "πολιτική διαφήμιση κανόνες OR διαφάνεια προεκλογικών διαφημίσεων"
+  },
+  {
+   "label": "Svenska · targeting",
+   "lang": "sv",
+   "standing": "press",
+   "hl": "sv",
+   "gl": "SE",
+   "ceid": "SE:sv",
+   "theme": "targeting",
+   "query": "riktad reklam förbud OR mikroinriktning annonser"
+  },
+  {
+   "label": "Svenska · children",
+   "lang": "sv",
+   "standing": "press",
+   "hl": "sv",
+   "gl": "SE",
+   "ceid": "SE:sv",
+   "theme": "children",
+   "query": "reklam riktad till barn förbud OR skräpmatsreklam barn"
+  },
+  {
+   "label": "Svenska · tracking",
+   "lang": "sv",
+   "standing": "press",
+   "hl": "sv",
+   "gl": "SE",
+   "ceid": "SE:sv",
+   "theme": "tracking",
+   "query": "annonsspårning böter OR cookiesamtycke dom OR datamäklare reklam"
+  },
+  {
+   "label": "Svenska · harmful",
+   "lang": "sv",
+   "standing": "press",
+   "hl": "sv",
+   "gl": "SE",
+   "ceid": "SE:sv",
+   "theme": "harmful",
+   "query": "spelreklam förbud OR alkoholreklam begränsning"
+  },
+  {
+   "label": "Svenska · greenwash",
+   "lang": "sv",
+   "standing": "press",
+   "hl": "sv",
+   "gl": "SE",
+   "ceid": "SE:sv",
+   "theme": "greenwash",
+   "query": "grönmålning reklam beslut OR vilseledande miljöpåståenden"
+  },
+  {
+   "label": "English (US) · propaganda",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-US",
+   "gl": "US",
+   "ceid": "US:en",
+   "theme": "propaganda",
+   "query": "manufactured consent OR public relations origins Bernays OR state propaganda campaign technique"
+  },
+  {
+   "label": "Español · propaganda",
+   "lang": "es",
+   "standing": "press",
+   "hl": "es",
+   "gl": "ES",
+   "ceid": "ES:es",
+   "theme": "propaganda",
+   "query": "fabricación del consenso OR orígenes de las relaciones públicas Bernays OR campaña de propaganda estatal"
+  },
+  {
+   "label": "Português (BR) · propaganda",
+   "lang": "pt",
+   "standing": "press",
+   "hl": "pt-BR",
+   "gl": "BR",
+   "ceid": "BR:pt-419",
+   "theme": "propaganda",
+   "query": "fabricação do consenso OR origens das relações públicas Bernays OR campanha de propaganda estatal"
+  },
+  {
+   "label": "Français · propaganda",
+   "lang": "fr",
+   "standing": "press",
+   "hl": "fr",
+   "gl": "FR",
+   "ceid": "FR:fr",
+   "theme": "propaganda",
+   "query": "fabrication du consentement OR origines des relations publiques Bernays OR campagne de propagande d'État"
+  },
+  {
+   "label": "Deutsch · propaganda",
+   "lang": "de",
+   "standing": "press",
+   "hl": "de",
+   "gl": "DE",
+   "ceid": "DE:de",
+   "theme": "propaganda",
+   "query": "Herstellung von Konsens OR Ursprünge der Public Relations Bernays OR staatliche Propagandakampagne"
+  },
+  {
+   "label": "Italiano · propaganda",
+   "lang": "it",
+   "standing": "press",
+   "hl": "it",
+   "gl": "IT",
+   "ceid": "IT:it",
+   "theme": "propaganda",
+   "query": "fabbrica del consenso OR origini delle pubbliche relazioni Bernays OR campagna di propaganda di Stato"
+  },
+  {
+   "label": "Русский · propaganda",
+   "lang": "ru",
+   "standing": "press",
+   "hl": "ru",
+   "gl": "RU",
+   "ceid": "RU:ru",
+   "theme": "propaganda",
+   "query": "производство согласия OR истоки пиара Бернейс OR государственная пропагандистская кампания"
+  },
+  {
+   "label": "日本語 · propaganda",
+   "lang": "ja",
+   "standing": "press",
+   "hl": "ja",
+   "gl": "JP",
+   "ceid": "JP:ja",
+   "theme": "propaganda",
+   "query": "合意の捏造 OR パブリックリレーションズ 起源 バーネイズ OR 国家 宣伝 手法"
+  },
+  {
+   "label": "한국어 · propaganda",
+   "lang": "ko",
+   "standing": "press",
+   "hl": "ko",
+   "gl": "KR",
+   "ceid": "KR:ko",
+   "theme": "propaganda",
+   "query": "여론 조작 제조된 동의 OR 홍보의 기원 버네이스"
+  },
+  {
+   "label": "中文 · propaganda",
+   "lang": "zh",
+   "standing": "press",
+   "hl": "zh-TW",
+   "gl": "TW",
+   "ceid": "TW:zh-Hant",
+   "theme": "propaganda",
+   "query": "製造共識 OR 公共關係 起源 伯內斯 OR 國家 宣傳 手法"
+  },
+  {
+   "label": "English (US) · search",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-US",
+   "gl": "US",
+   "ceid": "US:en",
+   "theme": "search",
+   "query": "search advertising monopoly ruling OR ad auction manipulation OR search results paid placement"
+  },
+  {
+   "label": "Español · search",
+   "lang": "es",
+   "standing": "press",
+   "hl": "es",
+   "gl": "ES",
+   "ceid": "ES:es",
+   "theme": "search",
+   "query": "monopolio de la publicidad en buscadores OR manipulación de subastas publicitarias"
+  },
+  {
+   "label": "Português (BR) · search",
+   "lang": "pt",
+   "standing": "press",
+   "hl": "pt-BR",
+   "gl": "BR",
+   "ceid": "BR:pt-419",
+   "theme": "search",
+   "query": "monopólio da publicidade em motores de busca OR manipulação de leilões publicitários"
+  },
+  {
+   "label": "Français · search",
+   "lang": "fr",
+   "standing": "press",
+   "hl": "fr",
+   "gl": "FR",
+   "ceid": "FR:fr",
+   "theme": "search",
+   "query": "monopole de la publicité sur les moteurs de recherche OR manipulation des enchères publicitaires"
+  },
+  {
+   "label": "Deutsch · search",
+   "lang": "de",
+   "standing": "press",
+   "hl": "de",
+   "gl": "DE",
+   "ceid": "DE:de",
+   "theme": "search",
+   "query": "Monopol Suchmaschinenwerbung Urteil OR Manipulation von Werbeauktionen"
+  },
+  {
+   "label": "Italiano · search",
+   "lang": "it",
+   "standing": "press",
+   "hl": "it",
+   "gl": "IT",
+   "ceid": "IT:it",
+   "theme": "search",
+   "query": "monopolio della pubblicità sui motori di ricerca OR manipolazione delle aste pubblicitarie"
+  },
+  {
+   "label": "Русский · search",
+   "lang": "ru",
+   "standing": "press",
+   "hl": "ru",
+   "gl": "RU",
+   "ceid": "RU:ru",
+   "theme": "search",
+   "query": "монополия поисковой рекламы решение OR манипуляция рекламными аукционами"
+  },
+  {
+   "label": "日本語 · search",
+   "lang": "ja",
+   "standing": "press",
+   "hl": "ja",
+   "gl": "JP",
+   "ceid": "JP:ja",
+   "theme": "search",
+   "query": "検索広告 独占 判決 OR 広告オークション 操作"
+  },
+  {
+   "label": "한국어 · search",
+   "lang": "ko",
+   "standing": "press",
+   "hl": "ko",
+   "gl": "KR",
+   "ceid": "KR:ko",
+   "theme": "search",
+   "query": "검색 광고 독점 판결 OR 광고 경매 조작"
+  },
+  {
+   "label": "中文 · search",
+   "lang": "zh",
+   "standing": "press",
+   "hl": "zh-TW",
+   "gl": "TW",
+   "ceid": "TW:zh-Hant",
+   "theme": "search",
+   "query": "搜尋廣告 壟斷 判決 OR 廣告競價 操縱"
+  }
+ ],
+ "events": [
+  {
+   "label": "Advertising regulators",
+   "lang": "en",
+   "standing": "official",
+   "hl": "en-US",
+   "gl": "US",
+   "ceid": "US:en",
+   "query": "\"advertising standards\" ruling OR ad banned misleading OR complaint upheld regulator"
+  },
+  {
+   "label": "Data protection enforcement",
+   "lang": "en",
+   "standing": "official",
+   "hl": "en-US",
+   "gl": "US",
+   "ceid": "US:en",
+   "query": "data protection fine advertising OR CNIL OR noyb complaint tracking consent"
+  },
+  {
+   "label": "Competition cases",
+   "lang": "en",
+   "standing": "official",
+   "hl": "en-US",
+   "gl": "US",
+   "ceid": "US:en",
+   "query": "adtech antitrust ruling OR advertising monopoly case OR ad exchange remedy"
+  },
+  {
+   "label": "EU digital rules",
+   "lang": "en",
+   "standing": "official",
+   "hl": "en-US",
+   "gl": "US",
+   "ceid": "US:en",
+   "query": "\"Digital Services Act\" advertising obligation OR \"Digital Markets Act\" enforcement"
+  },
+  {
+   "label": "Court rulings on advertising",
+   "lang": "en",
+   "standing": "official",
+   "hl": "en-US",
+   "gl": "US",
+   "ceid": "US:en",
+   "query": "court ruling advertising OR misleading marketing verdict OR targeting unlawful"
+  },
+  {
+   "label": "Tracking and adtech research",
+   "lang": "en",
+   "standing": "research",
+   "hl": "en-US",
+   "gl": "US",
+   "ceid": "US:en",
+   "query": "\"real-time bidding\" research OR data broker investigation OR tracking study"
+  },
+  {
+   "label": "Attention and design research",
+   "lang": "en",
+   "standing": "research",
+   "hl": "en-US",
+   "gl": "US",
+   "ceid": "US:en",
+   "query": "\"addictive design\" study OR engagement optimisation harm research"
+  },
+  {
+   "label": "Children and advertising",
+   "lang": "en",
+   "standing": "research",
+   "hl": "en-US",
+   "gl": "US",
+   "ceid": "US:en",
+   "query": "children advertising exposure study OR kidfluencer research OR age-appropriate design"
+  },
+  {
+   "label": "Greenwashing monitoring",
+   "lang": "en",
+   "standing": "research",
+   "hl": "en-US",
+   "gl": "US",
+   "ceid": "US:en",
+   "query": "greenwashing report OR green claims audit OR environmental claims study"
+  },
+  {
+   "label": "Industry concentration",
+   "lang": "en",
+   "standing": "research",
+   "hl": "en-US",
+   "gl": "US",
+   "ceid": "US:en",
+   "query": "advertising holding company merger OR agency market share OR duopoly digital ads"
+  },
+  {
+   "label": "Privacy campaigning",
+   "lang": "en",
+   "standing": "rights",
+   "hl": "en-US",
+   "gl": "US",
+   "ceid": "US:en",
+   "query": "privacy complaint advertising OR tracking campaign OR consent banner action"
+  },
+  {
+   "label": "Consumer protection",
+   "lang": "en",
+   "standing": "rights",
+   "hl": "en-US",
+   "gl": "US",
+   "ceid": "US:en",
+   "query": "misleading advertising complaint OR consumer group ad campaign OR dark patterns report"
+  },
+  {
+   "label": "Public space campaigns",
+   "lang": "en",
+   "standing": "rights",
+   "hl": "en-US",
+   "gl": "US",
+   "ceid": "US:en",
+   "query": "billboard ban campaign OR outdoor advertising restriction city OR subvertising"
+  },
+  {
+   "label": "Political ads transparency",
+   "lang": "en",
+   "standing": "rights",
+   "hl": "en-US",
+   "gl": "US",
+   "ceid": "US:en",
+   "query": "political ad transparency campaign OR dark ads investigation election"
+  },
+  {
+   "label": "Space and the night sky",
+   "lang": "en",
+   "standing": "official",
+   "hl": "en-US",
+   "gl": "US",
+   "ceid": "US:en",
+   "query": "satellite brightness OR \"dark and quiet skies\" OR orbital advertising proposal"
+  },
+  {
+   "label": "AI in advertising",
+   "lang": "en",
+   "standing": "research",
+   "hl": "en-US",
+   "gl": "US",
+   "ceid": "US:en",
+   "query": "generative AI advertising disclosure OR synthetic media marketing rules"
+  }
+ ]
 }
